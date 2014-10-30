@@ -1,0 +1,45 @@
+\documentclass{book}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage{lipsum}% just to generate text
+
+%\colorlet{myrulecolor}{black}
+\definecolor{myrulecolor}{RGB}{150,20,0}% define the color for the rules
+
+\titleformat{\chapter}[display]
+  {\normalfont\scshape\Huge}
+  {\hspace*{-70pt}\thechapter.~#1}
+  {-15pt}
+  {\hspace*{-110pt}{\color{myrulecolor}\rule{\dimexpr\textwidth+80pt\relax}{3pt}}\Huge}
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\scshape\Huge}
+  {\hspace*{-70pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}{\color{myrulecolor}\rule{\dimexpr\textwidth+80pt\relax}{3pt}}\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{30pt}
+
+\begin{document}
+\chapter*{27. Estimating Abundance\\
+          \noindent{\large{Chris Sutherland \& Andy Royle}}}
+\begin{itemize}
+\item{repeated sampling of individuals}
+\item{counts versus \emph{true} abundance}
+\item{a heuristic estimator}
+\item{flavours of p
+  \item{time}
+  \item{behaviour}
+  \ldots
+  \item{individual covariates}
+}
+\item{distance to trap as an individual covariate}
+\item{enter SCR}
+\item{the promise of SCR}
+\item{An example - lizards??}
+
+
+
+\end{itemize}
+Importance of differentiating between counts and abundance; pitfalls of misinterpreting such data; detection probabilities. Capture-mark-recapture; removal sampling.
+\end{document}
+
+
