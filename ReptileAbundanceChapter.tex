@@ -43,6 +43,87 @@ Importance of differentiating between counts and abundance; pitfalls of misinter
 
 \section{Introduction}
 
+Inference about population size or abundance is a fundamental
+objective in applied ecology and management of species.
+Capture-recapture methods have been widely applied to that end for
+many decades (Otis et al. 1978; Seber 1982; Williams et al. 2002).
+Capture-recapture methods can be characterized by whether they are
+``open'' or ``closed'' population models.  Open populations are those
+which experience net recruitment or mortality over the period of
+sampling so that individuals are added or removed from the population
+and $N$ may not be constant. Conversely, a closed population is one
+with no additions or removals to the population and in which $N$ does
+not change during the study.  Two forms of closure are often
+discussed: demographic closure, meaning that no births or deaths
+occur, and geographic closure, which states that no individuals move
+onto or off of the sampled area during the study.  Classical closed
+population models assume both of these variations of closure although
+newly developed spatial capture-recapture models relax the assumption
+of geographic closure.  Although few populations are actually closed
+except during very short time intervals, closed population CR models
+serve as the basis for the development of broad classes of models
+including models for open populations and recent spatial
+capture-recapture models (Royle et al. 2014).
+
+Relevance of capture-recapture to herptile populations..... marking,
+capturing methods... removal...
+
+In this chapter we review conventional types of closed population
+models for estimating population size including the basic models M0 Mb
+Mt Mh and related models described in the synthesis by Otis et
+al. (1978).  We discuss special cases such as distance sampling (a
+type of individual covariate model) used widely for sampling tortoise
+populations. Removal methods... and finally we provide a brief
+overview of spatial capture recapture (SCR or 'secr') models which
+have been developed over the last decade (Efford 2004). 
+
+
+capture-recapture model, colloquially referred to as ``model $M_0$''
+\citep{otis_etal:1978}, in which encounter probability is strictly
+constant in all respects (across individuals, and replicates).  This
+allows us to highlight the basic structure of closed population models
+as binomial GLMs.  We then consider some important extensions of
+ordinary closed population models that accommodate various types of
+``individual effects'' --- either in the form of explicit, observed
+covariates (sex, age, body mass) or unstructured ``heterogeneity'' in
+the form of an individual random effect, which represent 
+unobserved or unmeasured covariates.  A special type of individual
+covariate models is distance sampling, which could be thought of as
+the most primitive spatial capture-recapture model.  All of these
+different types of closed population models are closely related to
+binomial (or logistic) regression-type models. In fact, when $N$ is
+known, they are precisely logistic regression models.
+
+
+
+
+
+
+
+
+
+\section{Software and analysis}
+
+MARK
+
+unmarked for fitting certain types of hierarchical capture-recapture
+models. 
+
+We emphasize Bayesian analysis of capture-recapture models and we
+accomplish this using a method related to classical ``data
+augmentation'' from the statistics literature
+\citep[e.g.,][]{tanner_wong:1987}.  This is a general concept in
+statistics but, in the context of capture-recapture models where $N$
+is unknown, it has a consistent implementation across classes of
+capture-recapture models and one that is really convenient from the
+standpoint of doing MCMC
+\citep{royle_etal:2007,royle_dorazio:2012}. We use data augmentation
+throughout this book and thus emphasize its conceptual and technical
+origins and demonstrate applications to closed population models.  We
+refer the reader to \citet[][ch. 6]{kery_schaub:2011} for an
+accessible and complementary development of Bayesian analysis of
+ordinary, i.e., nonspatial closed population models.
+
 
 
 
