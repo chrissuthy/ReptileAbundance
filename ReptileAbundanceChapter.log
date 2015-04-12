@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.5.28)  30 OCT 2014 10:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.5.28)  12 APR 2015 16:51
 entering extended mode
 **C:/Users/cs922/Dropbox/ReptileAbundance/ReptileAbundanceChapter.tex
 (C:/Users/cs922/Dropbox/ReptileAbundance/ReptileAbundanceChapter.tex
@@ -76,6 +76,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count89
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen108
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\ttlkeys.def"
 File: ttlkeys.def 2011/12/15
 
@@ -103,44 +106,65 @@ LaTeX Font Info:    ... okay on input line 21.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count92
-\scratchdimen=\dimen108
+\scratchdimen=\dimen109
 \scratchbox=\box27
 \nofMPsegments=\count93
 \nofMParguments=\count94
 \everyMPshowfont=\toks16
 \MPscratchCnt=\count95
-\MPscratchDim=\dimen109
+\MPscratchDim=\dimen110
 \MPnumerator=\count96
 \makeMPintoPDFobject=\count97
 \everyMPtoPDFconversion=\toks17
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
- [1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 27.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\cs922\Dropbox\ReptileAbundance\ReptileAbundanceChapter.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+[1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[3] [4] (C:\Users\cs922\Dropbox\ReptileAbundance\ReptileAbundanceChapter.aux) )
+ 
 Here is how much of TeX's memory you used:
- 1924 strings out of 493921
- 24510 string characters out of 3144876
- 180734 words of memory out of 3000000
- 5259 multiletter control sequences out of 15000+200000
- 4889 words of font info for 18 fonts, out of 3000000 for 9000
+ 1952 strings out of 493921
+ 24952 string characters out of 3144876
+ 185941 words of memory out of 3000000
+ 5282 multiletter control sequences out of 15000+200000
+ 6760 words of font info for 24 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 23i,5n,35p,296b,151s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ReptileAbundanceChapter.pdf (1 page, 47769 bytes).
+ 23i,9n,35p,1170b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on ReptileAbundanceChapter.pdf (4 pages, 115250 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
