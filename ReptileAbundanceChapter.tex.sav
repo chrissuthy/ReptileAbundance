@@ -1,0 +1,127 @@
+\documentclass{book}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage{lipsum}% just to generate text
+\usepackage{multirow}
+%\colorlet{myrulecolor}{black}
+\definecolor{myrulecolor}{RGB}{150,20,0}% define the color for the rules
+
+\titleformat{\chapter}[display]
+  {\normalfont\scshape\Huge}
+  {\hspace*{-70pt}\thechapter.~#1}
+  {-15pt}
+  {\hspace*{-110pt}{\color{myrulecolor}\rule{\dimexpr\textwidth+80pt\relax}{3pt}}\Huge}
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\scshape\Huge}
+  {\hspace*{-70pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}{\color{myrulecolor}\rule{\dimexpr\textwidth+80pt\relax}{3pt}}\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{30pt}
+
+\begin{document}
+\chapter*{27. Estimating Abundance\\
+          \noindent{\large{Chris Sutherland \& Andy Royle}}}
+
+\section*{1. Introduction}
+%intro: motivate CMR
+Fundamental to much of applied ecology, including species management and conservation, is the ability to reliably estimate population size, or $abundance$. This is particulary true for reptiles given growing evidence of declines globally (Gibbons et al. 2000, Reading et al. 2010). The major challenge arises because rarely are all the individuals in a population encountered during a survey, and that the resulting $counts$, i.e. the number of individuals encountered, $C$, represents only some fraction of the true abundance, $N$. Although the distinction between counts and true abundance is an important one, the two are intuitively related and, by repeatedly sampling and marking individuals in a population, capture-recapture methods provide a formalization of this relationship generating estimates of the true population size.\\
+
+In this chapter, we provide a non-technical overview of `closed population capture-recapture' models, a well established approach widely applied in ecology (Williams et al. 2001), and regularly adopted for studies of reptiles (Mazerolle et al. 2007), to estimate abundance from counts of marked individuals by accounting for imperfect detection. We first describe some classic closed population models for estimating abundance (Otis et al., 1978), then consider some recent extensions that provide a spatial context for the estimation of abundance, and therefore density, $D$ (Spatial Capture-Recapture: Efford 2004, Royle et al. 2014), and finally provide an example of estimating abundance and density of reptiles using an artificial cover object survey of slow worms, \textit{Anguis fragilis}.
+
+\subsection*{2. Closed Population Capture-Recapture}
+\subsubsection*{2.1. Sampling a population}
+%A typical CMR study
+A primary objective in a closed population capture-recapture study is to estimate the abundance of a population of interest. The population of $N$ individuals is subjected to repeated sampling for a specified number of occasions, say $K$ where, in the first sampling occasion, all captured individuals are marked an released, and then at each subsequent sampling occasion the detection of marked individuals is recorded and unmarked individuals are marked. Identifying a focal population, the spatial extent of the population is implicitly defined and the method of capture depends on the species in question and available resources. For reptiles, survey methods that allow individuals to be captured and marked include, for example, visual searches within a defined area (), pit-fall traps (), and the use of artificial cover objects () (see also Chapter X). Once captured, individuals can be uniquely identified using either natural markings that can be used to determine individual identity (), using tags or colored markings () or physical marking such as toe clipping () (see also Chapter X).\\
+ 
+Such repeated sampling results in individual encounter histories that, for each of the $i=1,\ldots,n$ individuals encountered, describes whether or not individuals were detected in each of the $K$ occasions. For example, in a $K = 4$ occasion capture-recapture study, an individual with an encounter $y_i = (0 1 0 1)$ was encountered $\hbox{y}_i = 2$ times; first in occasion 2, and then again in occasion 4, and was not encountered in occasions one or three. In Table \ref{enchist} we provide an example of encounter history data for a $K=4$ occasion capture-recapture study during which $n=8$ individuals were captured.
+
+\begin{table}[h]
+  \centering
+  \caption{An example of an encounter history for a $K = 4$ occasion capture-recapture study during which $n=8$ individuals were detected.}
+  \label{enchist}
+ \begin{tabular}{lccccr}
+ \hline
+    &\multicolumn{5}{c}{Occasion} \\
+  Individual & 1 & 2 & 3 & 4 & y\\
+ \hline
+  1   & 0 & 1 & 0 & 1 & 2 \\
+  2   & 1 & 0 & 0 & 1 & 2 \\
+  3   & 0 & 1 & 1 & 1 & 3 \\
+  4   & 1 & 1 & 0 & 0 & 2 \\
+  5   & 1 & 0 & 0 & 1 & 2 \\
+  6   & 0 & 0 & 1 & 1 & 2 \\
+  7   & 0 & 0 & 1 & 0 & 1 \\
+  n=8 & 1 & 0 & 0 & 1 & 2 \\
+ \hline
+ \end{tabular}
+\end{table}
+
+Estimating abundance using encounter history data collected using the general sampling scheme we have described above requires that the following three basic assumptions are met:
+
+\begin{enumerate}
+\item the population is closed
+\item individual marks can be identified unambiguously
+\item individuals are equally likely to be captured
+\end{enumerate}
+
+A `closed' population is one that experiences no additions or subtractions for the duration of the study, and whose size is therefore assumed to be fixed during sampling. Defining a sampling period over which the assumption of closure can be satisfied means that an individual detected at least once during the study was present for the entire study, and therefore, failure to detect that individual in any occasion was due to imperfect detection. This highlights the importance of the second assumption -- that individuals are identified unambiguously -- because misidentification would lead to erroneous encounter histories that don't reflect the true process of encountering individuals. The third assumption is less important as we will see later but satisfying this assumption means that we can employ the simplest formulation of a capture-recapture model, model $M_0$.
+
+\subsubsection*{2.2. Estimating abundance using model $M_0$}
+
+
+\subsubsection*{2.3. Variation in $p$: beyond $M_0$}
+The assumption of equal capture probability is a rather restricting one and there are many situations under which the capture probabilities would be expected to vary. For these situations, model $M_0$ is not appropriate although and Otis et al. (1978) described a family of models that can be used to deal with most sources of variation in individual encounter probabilities:
+
+\begin{itemize}
+\item[$M_0$] Capture probability is the same for all individuals
+\item[$M_t$] Capture probability is the same for all individuals, but varies between sampling occasions (\textbf{t}ime)
+\item[$M_b$] Capture probabilities vary depending on whether or not individuals have been captured previously (\textbf{b}ehavioral response)
+\item[$M_h$] Capture probabilities vary among individuals (individual \textbf{h}eterogeneity)
+\end{itemize}
+
+
+
+accommodate various types of ``individual effects'' --- either in the form of explicit, observed covariates (sex, age, body mass) or unstructured ``heterogeneity'' in the form of an individual random effect, which represent unobserved or unmeasured covariates.  A special type of individual covariate models is distance sampling, which could be thought of as
+the most primitive spatial capture-recapture model.
+
+\subsubsection*{2.4. Removal Sampling}
+
+
+\subsection*{3. Spatial Capture-Recapture}
+
+\subsection*{4. Software}
+
+\subsection*{5. Slow worm example}
+
+
+
+
+
+
+\section{Summary}
+
+
+MARK
+
+unmarked for fitting certain types of hierarchical capture-recapture
+models.
+
+We emphasize Bayesian analysis of capture-recapture models and we
+accomplish this using a method related to classical ``data
+augmentation'' from the statistics literature (e.g., tanner wong, 1987).  This is a general concept in
+statistics but, in the context of capture-recapture models where $N$
+is unknown, it has a consistent implementation across classes of
+capture-recapture models and one that is really convenient from the
+standpoint of doing MCMC
+(royle etal, 2007; royle dorazio 2012). We use data augmentation
+throughout this book and thus emphasize its conceptual and technical
+origins and demonstrate applications to closed population models.  We
+refer the reader to (Ch. 6 kery schaub 2011) for an
+accessible and complementary development of Bayesian analysis of
+ordinary, i.e., nonspatial closed population models.
+
+
+
+\end{document}
+
+
