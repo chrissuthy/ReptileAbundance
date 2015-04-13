@@ -29,9 +29,8 @@ Fundamental to much of applied ecology, including species management
 and conservation, is the ability to reliably estimate population size,
 or $abundance$. This is particulary true for reptiles given growing
 evidence of declines globally (Gibbons et al. 2000, Reading et
-al. 2010) and high levels of data deficiency (B{\"o}hm et a.l 2013). The 
-major challenge arises because rarely are all the individuals in a 
-population encountered during a survey, and that the
+al. 2010). The major challenge arises because rarely are all the
+individuals in a population encountered during a survey, and that the
 resulting $counts$, i.e. the number of individuals encountered, $C$,
 represents only some fraction of the true abundance, $N$. Although the
 distinction between counts and true abundance is an important one, the
@@ -112,7 +111,7 @@ individuals were captured.
 Estimating abundance using encounter history data collected using the
 general sampling scheme we have described above is basically the
 process of estimating how many individuals were $missed$, i.e., how
-many individuals have encounter history $\hbox{y}_i = 0$. The ability
+many individuals have encouter history $\hbox{y}_i = 0$. The ability
 to do so requires that the following basic assumptions are met:
 
 \begin{enumerate}
@@ -340,22 +339,22 @@ y_{i,j} \sim \hbox{Binomial}(K,p_{i,j}),
 \]
 where $p_{i,j}$ is the probability of encountering individual $i$ in trap $j$, which depends on the distance between the trap location ($x_j$) and the individuals activity center ($s_i$) as follows:
 \begin{equation}
-p_{i,j} = p_0 \times e^{-\alpha_1 \hbox{d}(x_{j},s_{i})^{2}}.
+p_{i,j} = p_0 \times e^{-\alpha_1 d_{euc}(x_{j},s_{i})^{2}}.
 \end{equation}
-This is refered to as the `bivariate normal' encounter model where $\hbox{logit}(p_0) = \alpha_0$ is the baseline encounter probability, which is the probability of encountering an individual at its' activity center, $\alpha_1 = 1/(2\sigma^2)$ describes the distance over which detection declines, and $\hbox{d}(x_{j},s_{i})$ is the Euclidean distance between trap $j$ and the activity center of individual $i$. In a spatial capture-recapture analysis, the parameters to be estimated are $\alpha_0$ and $\alpha_1$.
+This is refered to as the `bivariate normal' encounter model where $\hbox{logit}(p_0) = \alpha_0$ is the baseline encounter probability, which is the probability of encountering an individual at its' activity center, $\alpha_1 = 1/(2\sigma^2)$ describes the distance over which detection declines, and $d(x_{j},s_{i})$ is the Euclidean distance between trap $j$ and the activity center of individual $i$. In a spatial capture-recapture analysis, the parameters to be estimated are $\alpha_0$ and $\alpha_1$. 
 
 XXX perhaps a comment about this model as a model of space use, and also, but perhaps not, spatial variation in density XXX
 
 \subsection*{4. Software}
 
-CPCR:\\
-  MARK\\
-  Rmark\\
-  unmarked for fitting certain types of hierarchical capture-recapture models.\\
-  BUGS/JAGS\\
-SCR:\\
-  Density superceded by secr\\
-  oSCR\\
+CPCR:
+  MARK
+  Rmark
+  unmarked for fitting certain types of hierarchical capture-recapture models.
+  BUGS/JAGS
+SCR:
+  Density superceded by secr
+  oSCR
 
 \subsection*{5. Slow worm example}
 
