@@ -70,9 +70,10 @@ population, the spatial extent of the population is implicitly defined
 and the method of capture depends on the species in question and
 available resources. For reptiles, survey methods that allow
 individuals to be captured and marked include, for example, visual
-searches within a defined area (desert tortoise, horned lizards REFS),
-cage and pit-fall traps (guam snakes is an example... XXX), and the use of
-artificial cover objects () (see also Chapter X). Once captured,
+searches within a defined area (Zylstra et al. 2010),
+cage traps (Tyrrell et al. 2009, Christy et al. 2010) 
+or pitfall traps, and the use of
+artificial cover objects (CHRIS?) (see also Chapter X). Once captured,
 individuals can be uniquely identified using either natural markings
 that can be used to determine individual identity (), using tags or
 colored markings () or physical marking such as toe clipping () (see
@@ -141,22 +142,22 @@ the simplest formulation of a capture-recapture model, model $M_0$.
 
 Under model $M_0$, the encounter probability for each individual,
 $p_i$, is assumed to be the same for all individuals in the
-population, i.e., $p_i = p$. This means that $y_{ik}$, the probability
-of detecting individual $i$, during sampling occasion $k$ is the same
-for every individual in the population ($i = 1,\ldots,N$), which we
-can write formally as:
+population, i.e., $p_i = p$. Then, whether or not we encounter an
+individual $i=1,2,\ldots,N$ during sampling occasion $k$, $y_{ik}$, is a Bernoulli
+trial (a ``coin flip'')
+with constant probability $p$, which we can write formally as:
 \[
-y_{ik} \sim \hbox{Bernoulli}(p),
+y_{ik} \sim \hbox{Bernoulli}(p).
 \]
-which is to say individual encounter are Bernoulli random variables
-with a constant $p$ (i.e., there are no individual or temporal
-covariates that affect $p$). The basic idea of all closed population
+i.e.,  there are no individual or temporal
+covariates that affect $p$. The basic idea of all closed population
 capture-recapture methods  is that the pattern of
 detections in the encounter histories of individuals observed at least
 once provides information about individual detectability which, or
 detection probability, $p$ which in
 turn, can be used to estimate the number of individuals $not$
-encountered.  The basic idea is that the observed number of
+encountered.  The underlying concept can be understood by recognizing
+that  the observed number of
 individuals $n$ is related to the total population size $N$ by the
 expression:
 \[
@@ -165,25 +166,24 @@ expression:
 where $E()$ denotes statistical expectation and $\tilde{p}$ is the
 probability that an individual is captured {\it at all} during the
 study. In a study of $K$ survey occasions $\tilde{p}$ is directly
-related to $p$ by the formula
+related to the basic parameter $p$ by the formula
 \[
  \tilde{p} = 1-(1-p)^K
 \]
-This expression applies to model M0 but the
+This expression applies to model $M_0$ but the
  expression relating $p$ to $\tilde{p}$ is different depending on
-the specifici  capture-recapture being considered.
-
+the specific  capture-recapture being considered.
 In general the parameter $p$ can be estimated from the observed
 encounter histories and, in turn, this is used to estimate $\tilde{p}$
 and then finally we estimate $N$ by $\hat{N} = n/\tilde{p}$.
 
-XXXX working XXXX
+XXXXX need to work on this next paragraph XXXX
 
-Thus for example consider our individuals in the above
-table where we see 8 individuals sampled over 4 periods producing a
-total of 16 captures. Thus, on average, the capture probability for
-these 8 individuals was 0.50. We note that this is actually {\it not}
-an unbiased estimator of the probability of capture because we only
+Thus, for example, consider our individuals in the above table where
+we see 8 individuals sampled over 4 periods producing a total of 16
+captures. Thus, on average, the capture probability for these 8
+individuals was 0.50. We note that this is actually {\it not} an
+unbiased estimator of the probability of capture because we only
 observe , in our data set, captured individuals and they necessarily
 have at least one encounter event in their history. So, under the
 binomial model, we have some all-zero encounter histories that we
@@ -195,19 +195,17 @@ of $p$. One way to do this is using the so-called conditional
 likelihood and another approach is to use the 'full likelihood' which
 actually has a few different variations.  In any case, without giving
 these details (See Royle et al. 2014 sec. xxxx or Borchers et al...)
-the conceptual motivation for capture-recapture is to estimate
- the probability of  capturing an individual {\it at all} that
-exists
-in this population from the observed encounter histories.
-Call this  probability $p_{cap} = (1-p)^4$ where $p$ is the
-per-occasion capture-probability, a fundamental parameter of the
-model. We would estimate $p$ using the condietional likelihood or full
-likelihood approaches and then just plug in $p$ into the expression
-for $p_{cap}$ and we find that $p= 0.40$ (or whatever it is ) and
-therefore
-$p_{cap} =  .8$ (or whatever it is).
+the conceptual motivation for capture-recapture is to estimate the
+probability of capturing an individual {\it at all} that exists in
+this population from the observed encounter histories.  Call this
+probability $p_{cap} = (1-p)^4$ where $p$ is the per-occasion
+capture-probability, a fundamental parameter of the model. We would
+estimate $p$ using the condietional likelihood or full likelihood
+approaches and then just plug in $p$ into the expression for $p_{cap}$
+and we find that $p= 0.40$ (or whatever it is ) and therefore $p_{cap}
+= .8$ (or whatever it is).
 
-the conditional probability of encounter
+The conditional probability of encounter
  derives from a straightforward application of the law of total
 probability. Conceptually, we partition $\Pr(y)$ according to
 $\Pr(y) = \Pr(y|y>0)\Pr(y>0) + \Pr(y|y=0)\Pr(y=0)$. For any positive
@@ -238,13 +236,40 @@ probabilities would be expected to vary. For these situations, model
 $M_0$ is not appropriate although and Otis et al. (1978) described a
 family of models that can be used to deal with most sources of
 variation in individual encounter probabilities:
-
 \begin{itemize}
 \item[$M_0$] Capture probability is the same for all individuals
-\item[$M_t$] Capture probability is the same for all individuals, but varies between sampling occasions (\textbf{t}ime)
+\item[$M_t$] Capture probability is the same for all individuals, but
+  varies between sampling occasions (\textbf{t}ime) (note that we use
+  $k$ for the time index in our development).
 \item[$M_b$] Capture probabilities vary depending on whether or not individuals have been captured previously (\textbf{b}ehavioral response)
-\item[$M_h$] Capture probabilities vary among individuals (individual \textbf{h}eterogeneity)
+\item[$M_h$] Capture probabilities vary among individuals (individual \textbf{h}eterogeneity).
 \end{itemize}
+
+Variations of these different models exist. For example, the usually
+application of model $M_t$ involves occasion-specific parameters
+$p_{k}$ but we can also consider systematic variation in detection
+probability that results from explicit covariates. For example, we
+could model season variation in $p_k$ using a quadratic polynomial
+in Julian day, $J_{k}$, such as:
+\[
+ logit(p_{k}) = \alpha_0 + \alpha_1 J_{k} + \alpha_2 J^{2}_{k}
+\]
+and estimate the parameters $\alpha_0$, $\alpha_1$ and $\alpha_2$
+instead of fully occasion specific parameters $p_k$.
+The behavioral response model is usually parameterized as a permanent
+change in $p$ for individuals subsequent to their initial
+capture. This could be the result of 'trap happiness' due to having
+baited traps (uncommon in reptile studies) or it could be the result
+of 'trap shyness' due to aversion to handling. Sometimes a transient
+or ephemeral
+behavioral response may be sensible (Yang and Chao 2005). Under this
+type of model the response to initial capture only lasts for a brief
+period after initial capture. The heterogeneity model, model $M_h$,
+has many different versions in existance.....
+
+norris and pollock
+pledger
+Dorazio and Royle
 
 
 \subsubsection*{2.4. Removal Sampling}
@@ -321,7 +346,7 @@ reason that heterogeneity exists in almost every capture-recapture
 study due to the spatial organization of traps and of individuals in
 the population (see next section). Thus they were adopted historically
 to account for spatial structure in capture-recapture
-(Boullanger and McClellan XXXX, Karanth and Nichols XXX).
+(Boulanger and McLellan 2001, Karanth and Nichols 1998).
 For this purpose an individual covariate is created which
 describes {\it where} the individual is located in relation to the
 trapping array.  This approach leads naturally to more recent spatial
@@ -331,21 +356,71 @@ capture-recapture models described in the next section.
 
 \subsection*{3. Spatial Capture-Recapture}
 
-The sampling scheme for a $spatial$ capture-recapture analysis is the same as described above, i.e., there is a population of $N$ individuals, but now we consider each individual having an activity center that has $X$ and $Y$ coordinates ($\textbf{s}_i=(s_{i,X},s_{i,Y})$). Now the goal is to estimate the number of individuals (or activity centers) within a region of interest which we refer to as a $state$-$space$, or ${\cal S}$, which is to say we wish to estimate density: $D = N/||{\cal S}||$, where $||{\cal S}||$ is the area of ${\cal S}$. We assume that these activity centers are distributed uniformly throughout across space:
+One of the main deficiencies with classical closed population models
+is that they do not permit direct estimation of animal $density$
+because, in almost all practical field applications, it is not
+possible to precisely define the area sampled by a set of trapping
+devices. This is because individuals being captured  move about
+space and can be captured without the biologists knowing from whence
+those individuals originated or how much space they are using. Newly
+developed {\it spatial capture-recapture} (SCR) models (also called
+spatially-explicit capture-recapture, SECR) provide a technical framework for
+dealing with this problem (Efford 2004, Borchers and Efford 2008,
+Royle and Young 2008, Royle et al. 2014). 
+
+The sampling scheme for a $spatial$ capture-recapture analysis is the
+same as described above, i.e., there is a population of $N$
+individuals, but now we consider each individual having an activity
+center that has $X$ and $Y$ coordinates
+($\textbf{s}_i=(s_{i,X},s_{i,Y})$). Now the goal is to estimate the
+number of individuals (or activity centers) within a region of
+interest which we refer to as a $state$-$space$, or ${\cal S}$, which
+is to say we wish to estimate density: $D = N/||{\cal S}||$, where
+$||{\cal S}||$ is the area of ${\cal S}$. We assume that these
+activity centers are distributed uniformly throughout across space:
 \[
 \textbf{s}_i \sim \hbox{Uniform}({\cal S}).
 \]
-As before, the population is subjected to sampling using some trapping devices (for convenience, we will refer to these as `traps'). However, we explicitly acknowledge both how many traps there are: $j=1,...,J$ traps, and the locations of each of the traps, which we will call these locations $x_j$. The acknowledgement of the spatial structure of the traps means observations can be spatially indexed so encounter histories describe $who$ ($i$), $when$ ($k$), and importantly, $where$ ($j$) individuals were located, i.e., $y_{i,j,k}$. Typically, these observations are assumed to be binomially distributed with sample size $K$ (the number of sampling occasions):
+As before, the population is subjected to sampling using some trapping
+devices (for convenience, we will refer to these as `traps'). However,
+we explicitly acknowledge both how many traps there are: $j=1,...,J$
+traps, and the locations of each of the traps, which we will call
+these locations $x_j$. The acknowledgement of the spatial structure of
+the traps means observations can be spatially indexed so encounter
+histories describe $who$ ($i$), $when$ ($k$), and importantly, $where$
+($j$) individuals were located, i.e., $y_{i,j,k}$. Typically, these
+observations are assumed to be binomially distributed with sample size
+$K$ (the number of sampling occasions):
 \[
 y_{i,j} \sim \hbox{Binomial}(K,p_{i,j}),
 \]
-where $p_{i,j}$ is the probability of encountering individual $i$ in trap $j$, which depends on the distance between the trap location ($x_j$) and the individuals activity center ($s_i$) as follows:
+where $p_{i,j}$ is the probability of encountering individual $i$ in
+trap $j$, which depends on the distance between the trap location
+($x_j$) and the individuals activity center ($s_i$) as follows:
 \begin{equation}
 p_{i,j} = p_0 \times e^{-\alpha_1 \hbox{d}(x_{j},s_{i})^{2}}.
 \end{equation}
-This is refered to as the `bivariate normal' encounter model where $\hbox{logit}(p_0) = \alpha_0$ is the baseline encounter probability, which is the probability of encountering an individual at its' activity center, $\alpha_1 = 1/(2\sigma^2)$ describes the distance over which detection declines, and $\hbox{d}(x_{j},s_{i})$ is the Euclidean distance between trap $j$ and the activity center of individual $i$. In a spatial capture-recapture analysis, the parameters to be estimated are $\alpha_0$ and $\alpha_1$.
+This is refered to as the `bivariate normal' encounter model where
+$\hbox{logit}(p_0) = \alpha_0$ is the baseline encounter probability,
+which is the probability of encountering an individual at its'
+activity center, $\alpha_1 = 1/(2\sigma^2)$ describes the distance
+over which detection declines, and $\hbox{d}(x_{j},s_{i})$ is the
+Euclidean distance between trap $j$ and the activity center of
+individual $i$. In a spatial capture-recapture analysis, the
+parameters to be estimated are $\alpha_0$ and $\alpha_1$.
 
-XXX perhaps a comment about this model as a model of space use, and also, but perhaps not, spatial variation in density XXX
+SCR models address the density estimation problem by parameterizing
+the model directly in terms of individual activity centers $s_i$ and
+prescribing the state-space ${\cal S}$. The inference problem then
+reduces to estimating the number of such activity centers in the
+well-defined area ${\cal S}$, i.e., density. While SCR models resolve
+this problem, they also enable researchers to study many aspects of
+spatial ecology from individual encounter history data, including
+resource selection or space usage (Royle et al. 2013), landscape
+connectivity (Royle et al. 2013b; Sutherland et al. 2014), spatial
+variation in density (Borchers and Efford 2008, Royle et al. 2013),
+and movement or dispersal (Schaub and Royle 2014, Ergon and Gardner
+2014, Royle et al. {\it in review}). 
 
 \subsection*{4. Software}
 
