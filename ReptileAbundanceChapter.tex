@@ -34,7 +34,7 @@ evidence of declines globally (Gibbons et al. 2000, Reading et
 al. 2010) and high levels of data deficiency (B{\"o}hm et a.l 2013). The 
 major challenge arises because rarely are all the individuals in a 
 population encountered during a survey, and that the
-resulting $counts$, i.e. the number of individuals encountered, $C$,
+resulting $counts$, i.e. the number of individuals encountered, $n$,
 represents only some fraction of the true abundance, $N$. Although the
 distinction between counts and true abundance is an important one, the
 two are intuitively related and, by repeatedly sampling and marking
@@ -60,25 +60,24 @@ survey of slow worms, \textit{Anguis fragilis}.
 \subsubsection*{2.1. Sampling a population}
 %A typical CMR study
 
-The primary objective in a closed population capture-recapture study is
-to estimate the abundance of a population of interest. The population
-of $N$ individuals is subjected to repeated sampling for a specified
-number of occasions, say $K$ where, in the first sampling occasion,
-all captured individuals are marked an released, and then at each
-subsequent sampling occasion the detection of marked individuals is
-recorded and unmarked individuals are marked. Identifying a focal
+The primary objective in a closed population capture-recapture study
+is to estimate the abundance of a population of interest. The
+population of $N$ individuals is subjected to repeated sampling for a
+specified number of occasions, say $K$ where, in the first sampling
+occasion, all captured individuals are marked an released, and then at
+each subsequent sampling occasion the detection of marked individuals
+is recorded and unmarked individuals are marked. Identifying a focal
 population, the spatial extent of the population is implicitly defined
 and the method of capture depends on the species in question and
 available resources. For reptiles, survey methods that allow
 individuals to be captured and marked include, for example, visual
-searches within a defined area (Zylstra et al. 2010),
-cage traps (Tyrrell et al. 2009, Christy et al. 2010) 
-or pitfall traps, and the use of
-artificial cover objects (CHRIS?) (see also Chapter X). Once captured,
-individuals can be uniquely identified using either natural markings
-that can be used to determine individual identity (), using tags or
-colored markings () or physical marking such as toe clipping () (see
-also Chapter X).
+searches within a defined area (Zylstra et al. 2010), cage traps
+(Tyrrell et al. 2009, Christy et al. 2010) or pitfall traps, and the
+use of artificial cover objects (CHRIS?) (see also Chapter X). Once
+captured, individuals can be uniquely identified using either natural
+markings that can be used to determine individual identity (), using
+tags or colored markings () or physical marking such as toe clipping
+() (see also Chapter X).
 
 Such repeated sampling results in individual encounter histories that,
 for each of the $i=1,\ldots,n$ individuals encountered, describes
@@ -208,16 +207,14 @@ and then finally we estimate $N$ by $\hat{N} = n/\tilde{p}$.
 This estimator is typically called the 'conditional estimator' of $N$
 because it is derived from an expression for the probability of the
 encounter history conditioned on the event that an individual is
-encountered at all (i.e., at least once).
-The conditional probability of encounter
- derives from a straightforward application of the law of total
-probability.  The conditional estimator of population size $N$ has
-only one canonical estimated parameter, that being $p$, and $N$ is a
-derived parameter. An alternative framework for inference about $N$ is
-based on the 
-'full likelihood' in which $N$ appears explicitly in the likelihood.
-The two approaches are both widely used in all contexts, and there is
-little practical difference. 
+encountered at all (i.e., at least once).  The conditional probability
+of encounter derives from a straightforward application of the law of
+total probability.  The conditional estimator of population size $N$
+has only one canonical estimated parameter, that being $p$, and $N$ is
+a derived parameter. An alternative framework for inference about $N$
+is based on the 'full likelihood' in which $N$ appears explicitly in
+the likelihood.  The two approaches are both widely used in all
+contexts, and there is little practical difference.
 
 %Thus, in model $M_0$ there are two parameters of interest that are
 %estimated using individual encounter histories: $p$, the probability
@@ -375,10 +372,9 @@ $\alpha$ in the model for detection probability according to:
 \[
 \tilde{p}_{i}  = 1- (1-p_{i})^K
 \]
-where $p_{i}$ is a function of parameters $\alpha_{0}$ and $\alpha_{1}$.
-In practice, parameters are
-estimated from the conditional-likelihood of the observed encounter
-histories.
+where $p_{i}$ is a function of parameters $\alpha_{0}$ and
+$\alpha_{1}$.  In practice, parameters are estimated from the
+conditional-likelihood of the observed encounter histories.
 
 An alternative formulation of model $M_x$ is the ``full likelihood''
 which requires that we put a model on the individual covariate $x$
@@ -486,7 +482,8 @@ SCR:\\
   Density superceded by secr\\
   oSCR\\
 
-Bayesian analysis....:
+Bayesian analysis....: integrate this material into the BUGS/JAGS
+bit. 
 We emphasize Bayesian analysis of capture-recapture models and we
 accomplish this using a method related to classical ``data
 augmentation'' from the statistics literature (e.g., tanner wong, 1987).  This is a general concept in
@@ -551,7 +548,10 @@ to use 40 meters....
 \section{Summary}
 
 Capture-recapture methods have been the standard for estimating
-population size and density for many decades.  Yet these methods have
+population size and density for many decades. 
+Capture-recapture is inherently spatial, and yet traditionally this
+has almost never been addressed in the application of capture-recapture methods
+ Yet these methods have
 a number of deficiencies that would appear to limit their usefulness
 in practice (but, strangely, have not). For example, they do not allow
 the direct estimation of density, they do not account for the spatial
@@ -563,7 +563,6 @@ explicit questions about spatial ecology of species and yet
 historically capture-recapture was a class of models for a systems
 that is the equivalent of a vaccuum. It doesn't accommodate any kind
 of interesting spatial structure.
-
 
 SCR is the future........
 
