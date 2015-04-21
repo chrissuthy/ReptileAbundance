@@ -506,8 +506,8 @@ We provide an example here using a study of the slow worm from (Anguis
 fragilis) at Mueterschwanderberg, canton Nidwalden, Switzerland (Meier
 2012, thesis). A more detailed SCR analysis of the data from that
 study is given by Meier et al. (in prep). Here we analyze a portion of
-the data from one of the trapping grids, shown in
-Fig. \ref{fig.fig1}. This ACO array was operated over 59 days and it
+the data from one of the artificial cover object arrays which used 23
+cover objects (Fig. \ref{fig.fig1}). This ACO array was operated over 59 days and it
 produced encounter histories on 44 unique individuals, 23 captured
 once, 4 capture twice, 4 thrice, 5 four times, 3 five times, 1 six
 times and 4 seven times.
@@ -515,8 +515,9 @@ times and 4 seven times.
 \centering
 \includegraphics[height=4in,width=4in]{traps.png}
 \caption{
-array of artificial cover boards used in the slow worm study from
-Meier (2012). 
+Artificial cover object array from the slow worm study of Meier
+2012).  Sampling from this array over 59 days produced encounter
+histories of 44 individuals. 
 }
 \label{fig.fig1}
 \end{figure}
@@ -536,9 +537,28 @@ $M_0$ and $M_h$ to these data in order to see how they compare.  We
 will also fit the SCR model to see how we can convert an estimate of
 $N$ to density. 
 
+For the analysis of the SCR model we defined
+ the state-space by creating the minimum area rectangle around the trap array
+and then buffering that by 40 meters, creating a state-space having an
+area of 10.64 ha. 
 
-the area is 7.5 ha if we buffer the state-space by 10 meters. ... need
-to use 40 meters....
+
+AIC not comparable between SCR and ordinary closed models because the
+data are different data. SCR models use the individual, trap and occasion-specific
+encounter data whereas ordinary capture-recapture models aggregate
+over all traps to produce a simpler reduced-information individual by
+occasion-specific encounter history
+
+
+> M0.est
+                           N.hat        AIC 
+ -3.189134   3.965148  47.965148 -73.416969 
+> Mh.est
+                                          N.hat         AIC 
+ -4.1931693   0.1083141   3.4291899  74.8516406 -89.2061925 
+> SCR.est
+                                                          AIC 
+  0.05010899  21.01696488 154.86978892  14.55734673 320.26840388 
 
 
 
