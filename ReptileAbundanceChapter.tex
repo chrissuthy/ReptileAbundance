@@ -178,50 +178,52 @@ In general the parameter $p$ can be estimated from the observed
 encounter histories and, in turn, this is used to estimate $\tilde{p}$
 and then finally we estimate $N$ by $\hat{N} = n/\tilde{p}$.
 
-XXXXX need to work on this next paragraph XXXX
+%XXXXX need to work on this next paragraph XXXX
+%Thus, for example, consider our individuals in the above table where
+%we see 8 individuals sampled over 4 periods producing a total of 16
+%captures. Thus, on average, the capture probability for these 8
+%individuals was 0.50. We note that this is actually {\it not} an
+%unbiased estimator of the probability of capture because we only
+%observe , in our data set, captured individuals and they necessarily
+%have at least one encounter event in their history. So, under the
+%binomial model, we have some all-zero encounter histories that we
+%don't observe and so our naive estimate of 0.50 is , in fact, biased
+%high. The true value should be much smaller. Part of the technical
+%ideas underling closed capture-recapture models is to account for this
+%bias in the observed sample and produce the correct unbiased estimate
+%of $p$. One way to do this is using the so-called conditional
+%likelihood and another approach is to use the 'full likelihood' which
+%actually has a few different variations.  In any case, without giving
+%these details (See Royle et al. 2014 sec. xxxx or Borchers et al...)
+%the conceptual motivation for capture-recapture is to estimate the
+%probability of capturing an individual {\it at all} that exists in
+%this population from the observed encounter histories.  Call this
+%probability $p_{cap} = (1-p)^4$ where $p$ is the per-occasion
+%capture-probability, a fundamental parameter of the model. We would
+%estimate $p$ using the condietional likelihood or full likelihood
+%approaches and then just plug in $p$ into the expression for $p_{cap}$
+%and we find that $p= 0.40$ (or whatever it is ) and therefore $p_{cap}
+%= .8$ (or whatever it is).
 
-Thus, for example, consider our individuals in the above table where
-we see 8 individuals sampled over 4 periods producing a total of 16
-captures. Thus, on average, the capture probability for these 8
-individuals was 0.50. We note that this is actually {\it not} an
-unbiased estimator of the probability of capture because we only
-observe , in our data set, captured individuals and they necessarily
-have at least one encounter event in their history. So, under the
-binomial model, we have some all-zero encounter histories that we
-don't observe and so our naive estimate of 0.50 is , in fact, biased
-high. The true value should be much smaller. Part of the technical
-ideas underling closed capture-recapture models is to account for this
-bias in the observed sample and produce the correct unbiased estimate
-of $p$. One way to do this is using the so-called conditional
-likelihood and another approach is to use the 'full likelihood' which
-actually has a few different variations.  In any case, without giving
-these details (See Royle et al. 2014 sec. xxxx or Borchers et al...)
-the conceptual motivation for capture-recapture is to estimate the
-probability of capturing an individual {\it at all} that exists in
-this population from the observed encounter histories.  Call this
-probability $p_{cap} = (1-p)^4$ where $p$ is the per-occasion
-capture-probability, a fundamental parameter of the model. We would
-estimate $p$ using the condietional likelihood or full likelihood
-approaches and then just plug in $p$ into the expression for $p_{cap}$
-and we find that $p= 0.40$ (or whatever it is ) and therefore $p_{cap}
-= .8$ (or whatever it is).
-
+This estimator is typically called the 'conditional estimator' of $N$
+because it is derived from an expression for the probability of the
+encounter history conditioned on the event that an individual is
+encountered at all (i.e., at least once).
 The conditional probability of encounter
  derives from a straightforward application of the law of total
-probability. Conceptually, we partition $\Pr(y)$ according to
-$\Pr(y) = \Pr(y|y>0)\Pr(y>0) + \Pr(y|y=0)\Pr(y=0)$. For any positive
-value of $y$ the 2nd term is necessarily 0, and so we rearrange to
-obtain
-$\Pr(y|y>0) = \Pr(y)/\Pr(y>0)$ which, in the specific case where
-$\Pr(y)$ is the
+probability.  The conditional estimator of population size $N$ has
+only one canonical estimated parameter, that being $p$, and $N$ is a
+derived parameter. An alternative framework for inference about $N$ is
+based on the 
+'full likelihood' in which $N$ appears explicitly in the likelihood.
+The two approaches are both widely used in all contexts, and there is
+little practical difference. 
 
-XXX end XXXXX
-
-Thus, in model $M_0$ there are two parameters of interest that are
-estimated using individual encounter histories: $p$, the probability
-of encountering an individual during a sampling occasion; and $n0$,
-the number of individuals present in the population that went
-unobserved (note that total population size is $N = n + n0$).
+%Thus, in model $M_0$ there are two parameters of interest that are
+%estimated using individual encounter histories: $p$, the probability
+%of encountering an individual during a sampling occasion; and $n0$,
+%the number of individuals present in the population that went
+%unobserved (note that total population size is $N = n + n0$).
 
 
 \subsubsection*{2.3. Variation in $p$: beyond $M_0$}
@@ -237,8 +239,11 @@ variation in individual encounter probabilities:
 \item[$M_t$] Capture probability is the same for all individuals, but
   varies between sampling occasions (\textbf{t}ime) (note that we use
   $k$ for the time index in our development).
-\item[$M_b$] Capture probabilities vary depending on whether or not individuals have been captured previously (\textbf{b}ehavioral response)
-\item[$M_h$] Capture probabilities vary among individuals (individual \textbf{h}eterogeneity).
+\item[$M_b$] Capture probabilities vary depending on whether or not
+  individuals have been captured previously (\textbf{b}ehavioral
+  response)
+\item[$M_h$] Capture probabilities vary among individuals (individual
+  \textbf{h}eterogeneity).
 \end{itemize}
 
 Variations of these different models exist. For example, the usually
@@ -270,13 +275,13 @@ Agresti 1999).
 
 \subsubsection*{2.4. Removal Sampling}
 
-Removal sampling is unlike capture-''recapture'' models in that sense
+Removal sampling is unlike capture-''recapture'' models in the sense
 that individuals are captured only once but then removed from the
 population and, hence, not available to be recaptured. The idea of
-removal sampling is that by repeatedly sampling and removing
+removal sampling is that by repeatedly removing
 individuals, the decline in catch frequency is informative about
 detection probability and this can then be used to obtain an estimate
-of the population size $N$ {\it prior} to the initiation of the
+of the population size $N$ as it was {\it prior} to the initiation of the
 sampling activity. Intutively we expect to capture $p \times N$
 individuals during a single sample and, if we remove those
 individuals, we should expect to capture capture $p \times (N - p
@@ -293,7 +298,6 @@ course earlier applications of removal sampling to fisheries involved
 permanent removal, typically harvest, but that is not practical in 
 most studies of reptiles. 
 
-
 \subsubsection*{2.5. Hierarchical capture-recapture models}
 
 Closed population models are usually described in the context of
@@ -302,7 +306,6 @@ almost always the case that multiple populations of individuals are
 sampled. For example,  small mammal trapping studies might involve a
 number of live trapping grids, or reptile and amphigiban studies might
 involve a number of distinct cover board arrays. 
-
 
 In this case we think
 of the distinct populations being sampled as spatial strata, with
