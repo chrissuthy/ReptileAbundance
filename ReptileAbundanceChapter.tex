@@ -296,6 +296,25 @@ most studies of reptiles.
 
 \subsubsection*{2.5. Hierarchical capture-recapture models}
 
+Closed population models are usually described in the context of
+sampling a single closed population. However, in practice, it is
+almost always the case that multiple populations of individuals are
+sampled. For example,  small mammal trapping studies might involve a
+number of live trapping grids, or reptile and amphigiban studies might
+involve a number of distinct cover board arrays. 
+
+
+In this case we think
+of the distinct populations being sampled as spatial strata, with
+potentially stratum specific parameters such as $p_{g}$, $N_{g}$ ($g$
+for 'grid') which could be estimated by applying closed population
+models to data collected from each stratum. 
+
+Models that integrate the data from these different
+strata..... hierarchical models (Royle and Dorazio 2008) provide that
+framework. 
+
+
 
 \subsection*{2.5 Individual covariate models and distance sampling}
 
@@ -475,16 +494,15 @@ ordinary, i.e., nonspatial closed population models.
 
 \subsection*{5. Slow worm example}
 
-We provide an example here using a study of the slow worm from 
-(Anguis fragilis) at
-Mueterschwanderberg, canton Nidwalden, Switzerland (Meier 2012,
-thesis). A more detailed SCR analysis of the data from that study is
-given by  Meier et al. (in prep). Here we analyze a portion of the
-data from one of the trapping grids, shown in
+We provide an example here using a study of the slow worm from (Anguis
+fragilis) at Mueterschwanderberg, canton Nidwalden, Switzerland (Meier
+2012, thesis). A more detailed SCR analysis of the data from that
+study is given by Meier et al. (in prep). Here we analyze a portion of
+the data from one of the trapping grids, shown in
 Fig. \ref{fig.fig1}. This ACO array was operated over 59 days and it
-produced encounter histories on 44 unique individuals, 23 captured once, 4
-capture twice, 4 thrice, 5 four times, 3 five times, 1 six times and 4
-seven times. 
+produced encounter histories on 44 unique individuals, 23 captured
+once, 4 capture twice, 4 thrice, 5 four times, 3 five times, 1 six
+times and 4 seven times.
 \begin{figure}[h]
 \centering
 \includegraphics[height=4in,width=4in]{traps.png}
@@ -511,7 +529,9 @@ will also fit the SCR model to see how we can convert an estimate of
 $N$ to density. 
 
 
-the area is 7.5 ha if we buffer the state-space by 10 meters. 
+the area is 7.5 ha if we buffer the state-space by 10 meters. ... need
+to use 40 meters....
+
 
 
 
@@ -527,11 +547,11 @@ the direct estimation of density, they do not account for the spatial
 organization of trapping arrays, or of individuals within the
 population being studied. 
 
-
 other topics; distance sampling....
 a large body
 of extensions to include open populations and other 
 
+SCR is the future........
 
 
 
