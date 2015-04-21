@@ -1,5 +1,6 @@
 \documentclass{book}
-
+\input{psfig}
+\usepackage{graphicx}
 \usepackage[explicit]{titlesec}
 \usepackage{xcolor}
 \usepackage{lipsum}% just to generate text
@@ -428,31 +429,7 @@ SCR:\\
   Density superceded by secr\\
   oSCR\\
 
-\subsection*{5. Slow worm example}
-
-We provide an example here using a study of the slow worm from 
-(Anguis fragilis) at
-Mueterschwanderberg, canton Nidwalden, Switzerland (Meier 2012,
-thesis). A more detailed SCR analysis of the data from that study is
-given by  Meier et al. (in prep). Here we analyze a portion of the
-data from one of the trapping grids, shown in Fig. XXXX.
-\begin{figure}[h]
-\centering
-\includegraphics[height=4in,width=4in]{traps.png}
-\caption{
-array of artificial cover boards used in the slow worm study from
-Meier (2012). 
-}
-\label{fig.fig1}
-\end{figure}
-
-
-
-\section{Summary}
-
-
-MARK
-
+Bayesian analysis....
 
 We emphasize Bayesian analysis of capture-recapture models and we
 accomplish this using a method related to classical ``data
@@ -467,6 +444,56 @@ origins and demonstrate applications to closed population models.  We
 refer the reader to (Ch. 6 kery schaub 2011) for an
 accessible and complementary development of Bayesian analysis of
 ordinary, i.e., nonspatial closed population models.
+
+
+
+\subsection*{5. Slow worm example}
+
+We provide an example here using a study of the slow worm from 
+(Anguis fragilis) at
+Mueterschwanderberg, canton Nidwalden, Switzerland (Meier 2012,
+thesis). A more detailed SCR analysis of the data from that study is
+given by  Meier et al. (in prep). Here we analyze a portion of the
+data from one of the trapping grids, shown in
+Fig. \ref{fig.fig1}. This ACO array was operated over 59 days and it
+produced encounter histories on 44 unique individuals, 23 captured once, 4
+capture twice, 4 thrice, 5 four times, 3 five times, 1 six times and 4
+seven times. 
+\begin{figure}[h]
+\centering
+\includegraphics[height=4in,width=4in]{traps.png}
+\caption{
+array of artificial cover boards used in the slow worm study from
+Meier (2012). 
+}
+\label{fig.fig1}
+\end{figure}
+An immediately obvious 'feature' of this ACO array is the irregular
+and uneven distribution of cover objects.  While we may apply
+capture-recapture models to the data from this study to estimate
+population size $N$, it is clear that the irregular ACO array should
+be a hinderance to a clear interpretation of this estimate because
+there is no obvious way to compute a sample area for this
+grid. Moreover, the spatial heterogeneity in trap density is almost
+certain to induce heterogeneity in detection probability of
+individuals depending on the location of individuals relative to
+traps. While we can use model $M_h$ to account for some heterogeneity,
+that model is not an explicit model of heterogeneity due to spatial
+proximity of individuals to traps. Nevertheless, we fit both models
+$M_0$ and $M_h$ to these data in order to see how they compare.  We
+will also fit the SCR model to see how we can convert an estimate of
+$N$ to density. 
+
+
+
+
+
+
+\section{Summary}
+
+
+MARK
+
 
 
 
