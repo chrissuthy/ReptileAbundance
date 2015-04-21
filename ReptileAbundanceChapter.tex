@@ -275,12 +275,13 @@ Agresti 1999).
 
 \subsubsection*{2.4. Removal Sampling}
 
-Removal sampling is unlike capture-''recapture'' models in the sense
+Removal sampling is unlike other capture-''recapture'' methods  in the sense
 that individuals are captured only once but then removed from the
 population and, hence, not available to be recaptured. The idea of
 removal sampling is that by repeatedly removing
-individuals, the decline in catch frequency is informative about
-detection probability and this can then be used to obtain an estimate
+individuals, we should realize a decrease in catch frequency, and this
+realized decrease is informative about
+detection probability which can then be used to obtain an estimate
 of the population size $N$ as it was {\it prior} to the initiation of the
 sampling activity. Intutively we expect to capture $p \times N$
 individuals during a single sample and, if we remove those
@@ -303,28 +304,29 @@ most studies of reptiles.
 Closed population models are usually described in the context of
 sampling a single closed population. However, in practice, it is
 almost always the case that multiple populations of individuals are
-sampled. For example,  small mammal trapping studies might involve a
+sampled. For example, small mammal trapping studies might involve a
 number of live trapping grids, or reptile and amphigiban studies might
-involve a number of distinct cover board arrays. 
+involve a number of distinct cover board arrays.  In such cases we can
+think of the distinct populations being sampled as spatial strata,
+with potentially stratum specific parameters such as $p_{g}$, $N_{g}$
+($g$ for 'grid') which could be estimated by applying closed
+population models to data collected from each stratum.  However,
+analzying the data from these stratified populations ``one-at-a-time''
+can be statistically inefficient (Converse and Royle 2012). Instead,
+there can be distinct advantages to combining all of the data into a
+single capture-recapture model but tying the different models together
+by imposing model structure on the detection probability or abundance
+parameters using a hierarchical modeling framework.  For example, a
+simple model allowing for variation in population size among a
+collection of $g=1,2,\ldots,G$ trap arrays is $N_{g} \sim
+\mbox{Poisson}(\lambda)$. This model allows each population to have
+it's own 'size' but builds in a weak stochastic dependence between the
+populations, so that all of the data are used to estimate the shared
+parameter $\lambda$. The end result is more precision to estimate the
+population-specific parameters by combining the information from all
+of the distinct populations. See Royle (2004), Dorazio et al. (2005)
+and Royle, Converse and Link (2012).
 
-In this case we think
-of the distinct populations being sampled as spatial strata, with
-potentially stratum specific parameters such as $p_{g}$, $N_{g}$ ($g$
-for 'grid') which could be estimated by applying closed population
-models to data collected from each stratum. 
-
-Models that integrate the data from these different
-strata..... hierarchical models (Royle and Dorazio 2008) provide that
-framework. 
-
-historically ... estimating models that describe variation in p among
-groups using conditional likelihood ideas..... but more general models
-based on hierarchical modeling ....
-
-Converse and Royle paper
-Royle 2004 ABC paper
-Dorazio, Jelks and Jordan paper
-Royle et al. arXiv paper. 
 
 \subsection*{2.5 Individual covariate models and distance sampling}
 
@@ -484,8 +486,7 @@ SCR:\\
   Density superceded by secr\\
   oSCR\\
 
-Bayesian analysis....
-
+Bayesian analysis....:
 We emphasize Bayesian analysis of capture-recapture models and we
 accomplish this using a method related to classical ``data
 augmentation'' from the statistics literature (e.g., tanner wong, 1987).  This is a general concept in
@@ -557,12 +558,27 @@ the direct estimation of density, they do not account for the spatial
 organization of trapping arrays, or of individuals within the
 population being studied. 
 
-other topics; distance sampling....
-a large body
-of extensions to include open populations and other 
+The other thing is this: capture-recapture studies often involve
+explicit questions about spatial ecology of species and yet
+historically capture-recapture was a class of models for a systems
+that is the equivalent of a vaccuum. It doesn't accommodate any kind
+of interesting spatial structure.
+
 
 SCR is the future........
 
+There are several other topics related to estimation of population
+size which are slightly beyond the scope of our effort here. One very
+important topic is distance sampling (Buckland et al. 2001).... Unlike
+capture-recapture sampling, distance sampling requires only a single
+``snap-shot'' sample of the population. For each detected individual
+distsance from the observer is measured.
+Information about detection
+probability comes from an assumed model for the relationship between
+detection probability and distance to observer. 
+
+a large body
+of extensions to include open populations and other 
 
 
 
