@@ -238,7 +238,7 @@ variation in individual encounter probabilities:
   $k$ for the time index in our development).
 \item[$M_b$] Capture probabilities vary depending on whether or not
   individuals have been captured previously (\textbf{b}ehavioral
-  response)
+  response).
 \item[$M_h$] Capture probabilities vary among individuals (individual
   \textbf{h}eterogeneity).
 \end{itemize}
@@ -261,14 +261,22 @@ reptile studies) or it could be the result of 'trap shyness' due to
 aversion to handling. Sometimes a transient or ephemeral behavioral
 response may be sensible (Yang and Chao 2005). Under this type of
 model the response to initial capture only lasts for a brief period
-after initial capture. The heterogeneity model, model $M_h$, has many
-different versions in existance. Norris and Pollock (1996) formulated
+after initial capture. 
+
+Model $M_h$ has been an important model in
+capture-recapture because it has long been recognized that the
+existance of individual heterogeneity in capture probability will lead
+to under-estimation of $N$ when it is not accounted for.  Thus much
+attention has been focused on developing more flexible classes of
+model $M_h$. 
+Thus,  model $M_h$, has many
+different variations. Norris and Pollock (1996) formulated
 the model in terms of a finite mixture or latent class model in which
 each individual in the population belongs to a finite (and small)
 number of classes represented by distinct values of $p$ (see also
 Pledger 2000). Dorazio and Royle (2003) considered continuous mixtures
 such as the beta-binomial and logit-normal models (see also Coull and
-Agresti 1999).
+Agresti 1999). 
 
 \subsubsection*{2.4. Removal Sampling}
 
@@ -447,22 +455,26 @@ where $p_{i,j}$ is the probability of encountering individual $i$ in
 trap $j$, which depends on the distance between the trap location
 ($x_j$) and the individuals activity center ($s_i$) as follows:
 \begin{equation}
-p_{i,j} = p_0 \times e^{-\alpha_1 \hbox{d}(x_{j},s_{i})^{2}}.
+p_{i,j} = p_0 \times e^{-(1/2\sigma^2) \hbox{d}(x_{j},s_{i})^{2}}.
 \end{equation}
-This is refered to as the `bivariate normal' encounter model where
+This is refered to as the half-normal or `bivariate normal' encounter model where
 $\hbox{logit}(p_0) = \alpha_0$ is the baseline encounter probability,
 which is the probability of encountering an individual at its'
-activity center, $\alpha_1 = 1/(2\sigma^2)$ describes the distance
-over which detection declines, and $\hbox{d}(x_{j},s_{i})$ is the
+activity center, the parameter $\sigma$ describes the rate at which
+detection probability declines as a function of distance,  
+and $\hbox{d}(x_{j},s_{i})$ is the
 Euclidean distance between trap $j$ and the activity center of
 individual $i$. In a spatial capture-recapture analysis, the
-parameters to be estimated are $\alpha_0$ and $\alpha_1$.
+parameters to be estimated are $\alpha_0$ and $\sigma$ in addition to
+population size $N$. 
 
-SCR models address the density estimation problem by parameterizing
+SCR models address the density estimation problem directly by parameterizing
 the model directly in terms of individual activity centers $s_i$ and
 prescribing the state-space ${\cal S}$. The inference problem then
 reduces to estimating the number of such activity centers in the
-well-defined area ${\cal S}$, i.e., density. While SCR models resolve
+well-defined area ${\cal S}$, i.e., density.  Density, $D$, is simply a
+transformation of $N$:  $D =  N/\mbox{Area}({\cal S})$.
+While SCR models resolve
 this problem, they also enable researchers to study many aspects of
 spatial ecology from individual encounter history data, including
 resource selection or space usage (Royle et al. 2013), landscape
@@ -538,13 +550,16 @@ will also fit the SCR model to see how we can convert an estimate of
 $N$ to density. 
 
 We fit the logit-normal variety of model $M_h$ (Coull and Agresti
-1999, Dorazio and Royle 2003) which assumes that the logit-transformed
+1999, Dorazio and Royle 2003) which assumes that the
+logit-transformation of individual 
 detection probabilitie $p_i$ has a normal distribution with variance
 $\theta^2$:
 \[
  logit(p_i) \sim \mbox{Normal}(\mu, \theta^2).
 \]
-Therefore this model has 3 parameters ($N$, $\mu$ and $\theta$).
+Therefore this model has 3 parameters ($N$, $\mu$ and $\theta$).  The
+additional parameter $\theta$ accommodates over-dispersion or
+individual heterogeneity in $p$. 
 For the analysis of the SCR model we defined
  the state-space by creating the minimum area rectangle around the trap array
 and then buffering that by 40 meters, creating a state-space having an
