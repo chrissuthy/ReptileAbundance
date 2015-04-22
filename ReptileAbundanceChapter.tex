@@ -263,37 +263,34 @@ response may be sensible (Yang and Chao 2005). Under this type of
 model the response to initial capture only lasts for a brief period
 after initial capture. 
 
-Model $M_h$ has been an important model in
-capture-recapture because it has long been recognized that the
-existance of individual heterogeneity in capture probability will lead
-to under-estimation of $N$ when it is not accounted for.  Thus much
-attention has been focused on developing more flexible classes of
-model $M_h$. 
-Thus,  model $M_h$, has many
-different variations. Norris and Pollock (1996) formulated
-the model in terms of a finite mixture or latent class model in which
-each individual in the population belongs to a finite (and small)
-number of classes represented by distinct values of $p$ (see also
-Pledger 2000). Dorazio and Royle (2003) considered continuous mixtures
-such as the beta-binomial and logit-normal models (see also Coull and
-Agresti 1999). 
+Model $M_h$ has been an important model in capture-recapture because
+it has long been recognized that the existance of individual
+heterogeneity in capture probability will lead to under-estimation of
+$N$ when it is not accounted for.  Thus much attention has been
+focused on developing more flexible classes of model $M_h$.  Thus,
+model $M_h$, has many different variations. Norris and Pollock (1996)
+formulated the model in terms of a finite mixture or latent class
+model in which each individual in the population belongs to a finite
+(and small) number of classes represented by distinct values of $p$
+(see also Pledger 2000). Dorazio and Royle (2003) considered
+continuous mixtures such as the beta-binomial and logit-normal models
+(see also Coull and Agresti 1999).
 
 \subsubsection*{2.4. Removal Sampling}
 
-Removal sampling is unlike other capture-''recapture'' methods  in the sense
-that individuals are captured only once but then removed from the
-population and, hence, not available to be recaptured. The idea of
-removal sampling is that by repeatedly removing
-individuals, we should realize a decrease in catch frequency, and this
-realized decrease is informative about
-detection probability which can then be used to obtain an estimate
-of the population size $N$ as it was {\it prior} to the initiation of the
-sampling activity. Intutively we expect to capture $p \times N$
-individuals during a single sample and, if we remove those
-individuals, we should expect to capture capture $p \times (N - p
-\times N) = p(1-p) N$ individuals in the 2nd bout of removal
-sampling. Note that the ratio of these two removal counts is $1-p$
-which produces a direct estimate of $p$ from which $N$ can be
+Removal sampling is unlike other capture-''recapture'' methods in the
+sense that individuals are captured only once but then removed from
+the population and, hence, not available to be recaptured. The idea of
+removal sampling is that by repeatedly removing individuals, we should
+realize a decrease in catch frequency, and this realized decrease is
+informative about detection probability which can then be used to
+obtain an estimate of the population size $N$ as it was {\it prior} to
+the initiation of the sampling activity. Intutively we expect to
+capture $p \times N$ individuals during a single sample and, if we
+remove those individuals, we should expect to capture capture $p
+\times (N - p \times N) = p(1-p) N$ individuals in the 2nd bout of
+removal sampling. Note that the ratio of these two removal counts is
+$1-p$ which produces a direct estimate of $p$ from which $N$ can be
 estimated by a suitable algebraic function of the counts.
 
 In practice, removal sampling is done using 'temporary' removals in
@@ -301,8 +298,8 @@ which an area is searched and individuals are temporarily housed in a
 bucket or cage during successive passes. At the end of the study they
 would normally be released to where they were initially captured. Of
 course earlier applications of removal sampling to fisheries involved
-permanent removal, typically harvest, but that is not practical in 
-most studies of reptiles. 
+permanent removal, typically harvest, but that is not practical in
+most studies of reptiles.
 
 \subsubsection*{2.5. Hierarchical capture-recapture models}
 
@@ -366,16 +363,16 @@ where $x_i$ is the covariate value for individual $i$ and the
 parameters $\alpha_0$ and $\alpha_1$ are the parameters to be
 estimated.
 
-Traditionally, estimation of $N$ in model $M_{x}$ is
-achieved using methods based on ideas of unequal probability sampling
-(i.e., Horvitz-Thompson estimation). This idea was developed
-independently by Huggins (1989) and Alho (1990). The estimator of N is
-given as a derived parameter:
+Traditionally, estimation of $N$ in model $M_{x}$ is achieved using
+methods based on ideas of unequal probability sampling (i.e.,
+Horvitz-Thompson estimation). This idea was developed independently by
+Huggins (1989) and Alho (1990). The estimator of N is given as a
+derived parameter:
 \[
 \hat{N} = \sum_{i=1}^{n} \frac{1}{\tilde{p}_{i}}
 \]
 where $\tilde{p}_{i}$ is the probability that individual $i$ appeared
-in the sample.   This is related to the more fundamental parameters
+in the sample.  This is related to the more fundamental parameters
 $\alpha$ in the model for detection probability according to:
 \[
 \tilde{p}_{i}  = 1- (1-p_{i})^K
@@ -387,9 +384,9 @@ conditional-likelihood of the observed encounter histories.
 An alternative formulation of model $M_x$ is the ``full likelihood''
 which requires that we put a model on the individual covariate $x$
 allowing for the sample not only of the encounter histories but also
-of the covariate to be extrapolated to the population.
- For example, if we have a continuous trait measured on
-each individual, then we might assume that $x$ has a normal distribution:
+of the covariate to be extrapolated to the population.  For example,
+if we have a continuous trait measured on each individual, then we
+might assume that $x$ has a normal distribution:
 \[
 x_{i} \sim \mbox{Normal}(\mu,\sigma^{2})
 \]
@@ -417,13 +414,13 @@ One of the main deficiencies with classical closed population models
 is that they do not permit direct estimation of animal $density$
 because, in almost all practical field applications, it is not
 possible to precisely define the area sampled by a set of trapping
-devices. This is because individuals being captured  move about
-space and can be captured without the biologists knowing from whence
-those individuals originated or how much space they are using. Newly
+devices. This is because individuals being captured move about space
+and can be captured without the biologists knowing from whence those
+individuals originated or how much space they are using. Newly
 developed {\it spatial capture-recapture} (SCR) models (also called
-spatially-explicit capture-recapture, SECR) provide a technical framework for
-dealing with this problem (Efford 2004, Borchers and Efford 2008,
-Royle and Young 2008, Royle et al. 2014). 
+spatially-explicit capture-recapture, SECR) provide a technical
+framework for dealing with this problem (Efford 2004, Borchers and
+Efford 2008, Royle and Young 2008, Royle et al. 2014).
 
 The sampling scheme for a $spatial$ capture-recapture analysis is the
 same as described above, i.e., there is a population of $N$
@@ -457,20 +454,19 @@ trap $j$, which depends on the distance between the trap location
 \begin{equation}
 p_{i,j} = p_0 \times e^{-(1/2\sigma^2) \hbox{d}(x_{j},s_{i})^{2}}.
 \end{equation}
-This is refered to as the half-normal or `bivariate normal' encounter model where
-$\hbox{logit}(p_0) = \alpha_0$ is the baseline encounter probability,
-which is the probability of encountering an individual at its'
-activity center, the parameter $\sigma$ describes the rate at which
-detection probability declines as a function of distance,  
-and $\hbox{d}(x_{j},s_{i})$ is the
-Euclidean distance between trap $j$ and the activity center of
-individual $i$. In a spatial capture-recapture analysis, the
-parameters to be estimated are $\alpha_0$ and $\sigma$ in addition to
-population size $N$.   As in model $M_h$, the additional parameter
-$\sigma$ accommodates individual heterogeneity in $p$ but, unlike
-model $M_h$, the parameter represents an explicit source of
+This is refered to as the half-normal or `bivariate normal' encounter
+model where $\hbox{logit}(p_0) = \alpha_0$ is the baseline encounter
+probability, which is the probability of encountering an individual at
+its' activity center, the parameter $\sigma$ describes the rate at
+which detection probability declines as a function of distance, and
+$\hbox{d}(x_{j},s_{i})$ is the Euclidean distance between trap $j$ and
+the activity center of individual $i$. In a spatial capture-recapture
+analysis, the parameters to be estimated are $\alpha_0$ and $\sigma$
+in addition to population size $N$.  As in model $M_h$, the additional
+parameter $\sigma$ accommodates individual heterogeneity in $p$ but,
+unlike model $M_h$, the parameter represents an explicit source of
 heterogeneity, that due to distance between individual activity or
-home range centers and trap locations. 
+home range centers and trap locations.
 
 SCR models address the density estimation problem directly by parameterizing
 the model directly in terms of individual activity centers $s_i$ and
@@ -555,9 +551,8 @@ $N$ to density.
 
 We fit the logit-normal variety of model $M_h$ (Coull and Agresti
 1999, Dorazio and Royle 2003) which assumes that the
-logit-transformation of individual 
-detection probabilitie $p_i$ has a normal distribution with variance
-$\theta^2$:
+logit-transformation of individual detection probabilitie $p_i$ has a
+normal distribution with variance $\theta^2$:
 \[
  logit(p_i) \sim \mbox{Normal}(\mu, \theta^2).
 \]
