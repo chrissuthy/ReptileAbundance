@@ -597,22 +597,38 @@ and then buffering that by 40 meters, creating a state-space having an
 area of 10.64 ha (Figure 1).
 The summary results from fitting these 3 models to the slow worm data
 are given in Table \ref{tab.results}. We note that
-AIC not comparable between SCR and ordinary closed models because the
+AIC {\it not} comparable between SCR and ordinary closed models because the
 models are fitted to different data sets:
 SCR models use the individual, trap and occasion-specific
 encounter data whereas ordinary capture-recapture models aggregate
 over all traps to produce a simpler reduced-information individual by
-occasion-specific encounter history
+occasion-specific encounter history.  A key point of this comparison
+is that the estimates of $n_0$ (the number of uncaptured individuals),
+and hence of $N$, are radically different. Model $M_h$ and the SCR
+model both accommodate heterogeneity in encounter probability which is
+indicated in these data ($\theta = 1.114$ under the logit-normal model
+$M_h$, which is favored strongly over model $M_0$ by AIC). Thus, the estimated $N$ is increased substantially in
+comparison to model $M_0$. In addition, the SCR model produces an
+estimate of $N$ that applies to a specific, well-defined region (the
+state-space) having an area of 10.64 ha. Thus we can compute directly
+an estimate of the {\it density} of slow worms, which comes out to
+14.68 slow worms/ha. 
+
 
 \begin{table}[ht]
 \centering
 \caption{The results of fitting models M0 and Mh and an ordinary SCR
-  model to the slow worm data. }
+  model to the slow worm data. Model $M_h$ has one extra parameter
+  compared to model $M_0$, the individual heterogeneity parameter
+  $\theta$. The SCR model has one additional parameter, $\sigma$, the
+  scale parameter of the encounter probability model relating
+  individual $p$ to distance between individual activity center and
+  trap location. }
 \begin{tabular}{ccccccc}
 Model & $p_0$ &  $n_0$   & extra parameter & N      & D(/ha)  & AIC     \\ \hline
 M0    &  0.0396  & 3.97  &                & 47.97 &         & -73.42  \\
-Mh    &  0.0149  & 30.88 & 0.108          & 74.88 &         & -89.21  \\
-SCR   &  0.050   &           & 21.02       & 154.87 & 14.56   & 320.27  \\
+Mh    &  0.0149  & 30.88 & 1.114        & 74.88 &         & -89.21  \\
+SCR   &  0.0501  & 112.14& 21.005        & 156.14 & 14.68   & 320.39  \\
 \end{tabular}
 \label{tab.results}
 \end{table}
