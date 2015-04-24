@@ -476,14 +476,7 @@ centers $s_i$ and prescribing the state-space ${\cal S}$. The
 inference problem then reduces to estimating the number of such
 activity centers in the well-defined area ${\cal S}$, i.e., density.
 Density, $D$, is simply a transformation of $N$: $D =
-N/\mbox{Area}({\cal S})$.  While SCR models resolve this problem, they
-also enable researchers to study many aspects of spatial ecology from
-individual encounter history data, including resource selection or
-space usage (Royle et al. 2013), landscape connectivity (Royle et
-al. 2013b; Sutherland et al. 2014), spatial variation in density
-(Borchers and Efford 2008, Royle et al. 2013), and movement or
-dispersal (Schaub and Royle 2014, Ergon and Gardner 2014, Royle et
-al. {\it in review}).
+N/\mbox{Area}({\cal S})$.
 
 \subsection*{4. Software}
 
@@ -597,7 +590,7 @@ and then buffering that by 40 meters, creating a state-space having an
 area of 10.64 ha (Figure 1).
 The summary results from fitting these 3 models to the slow worm data
 are given in Table \ref{tab.results}. We note that
-AIC {\it not} comparable between SCR and ordinary closed models because the
+AIC is {\it not} comparable between SCR and ordinary closed models because the
 models are fitted to different data sets:
 SCR models use the individual, trap and occasion-specific
 encounter data whereas ordinary capture-recapture models aggregate
@@ -635,13 +628,16 @@ SCR   &  0.0501  & 112.14& 21.005        & 156.14 & 14.68   & 320.39  \\
 
 \section*{6. Summary}
 
-As has been demonstrated throughout this book, reptiles represent an important component of many communities, are a group of animals in global decline and can be extremely difficult to monitor. Capture-recapture methods have been the standard for estimating population size and density for many decades and provide a framework for sampling populations and estimating key parameters, namely population size or abundance. However, we have also argued that capture-recapture is inherently spatial because of the way we typically conduct sampling (e.g. artificial cover objects, pitfall or cage traps etc...), and yet traditionally this has almost never been addressed in the application of capture-recapture methods. These non-spatial methods have a number of deficiencies that would appear to limit their usefulness in practice (but, strangely, have not). For example, they do not allow the direct estimation of density, they do not account for the spatial organization of trapping arrays, or of individuals within the population being studied. Moreover, capture-recapture studies often involve
-explicit questions about spatial ecology of species and yet, space is largely ignored opting instead for a ``fishbowl'' view of systems.
+Capture-recapture methods have been the standard for estimating population size and density for many decades and provide a framework for sampling populations and estimating key parameters, namely population size or abundance. However, we have also argued that capture-recapture is inherently spatial because of the way we typically conduct sampling (e.g. artificial cover objects, pitfall or cage traps etc...), and yet traditionally this has almost never been addressed in the application of capture-recapture methods. These non-spatial methods have a number of deficiencies that would appear to limit their usefulness in practice (but, strangely, have not). For example, they do not allow the direct estimation of density, they do not account for the spatial organization of trapping arrays, or of individuals within the population being studied. Moreover, despite capture-recapture studies often involving
+explicit questions about spatial ecology, space is largely ignored, opting instead for a ``fishbowl'' view of systems.
 
-A paragraph on why SCR is better, and specifically where it is going...
+We demonstrated that the source of heterogeneity that is likely to be an issue an almost all CR studies, i.e., spatial distribution of individuals relative to traps, can be address using spatial extensions of capture-recapture models, namely ``spatial capture-recapture''. The obvious benefit of SCR is that the spatial region for which abundance is estimated is explicitly defined and that \textit{absolute} density can be computed directly. Perhaps of greater importance however, is the explicit focus on the spatial processes giving rise to encounter data which enables researchers to study many aspects of spatial ecology from individual encounter history data, including resource selection or space usage (Royle et al. 2013), landscape connectivity (Royle et al. 2013b; Sutherland et al. 2014), spatial variation in density (Borchers and Efford 2008, Royle et al. 2013), and movement or dispersal (Schaub and Royle 2014, Ergon and Gardner 2014, Royle et al. {\it in review}).
 
-We note that, while we only focussed on estimating the size of a population using marked individuals, another very important method for estimating abundance is distance sampling (Buckland et al. 2005). Unlike capture-recapture sampling, distance sampling requires only a single ``snap-shot'' sample of the population. For each detected individual
-distance from the observer is measured. Information about detection probability comes from an assumed model for the relationship between detection probability and distance to observer.
+As has been demonstrated throughout this book, reptiles represent an important component of many communities, are a group of animals in global decline, and can be extremely difficult to monitor. Many of the methods described in earlier chapters for monitoring, capturing and identifying individuals for reptilian populations lend themselves naturally to analysis using capture-recapture methods and should be preferred over indices of abundance like raw counts. Moreover, many of these sampling procedures are naturally spatial (trapping grids, line transect etc...) in which case we recommend analysis using spatial capture recapture methods in order to arrive at meaningful, spatial referenced abundance estimates as we demonstrated with the slow worms example.
+
+XXX where should this next bit go??
+
+We note that, while we only focussed on estimating the size of a population using marked individuals, another very important method for estimating abundance is distance sampling (Buckland et al. 2005). Unlike capture-recapture sampling, distance sampling requires only a single ``snap-shot'' sample of the population. For each detected individual distance from the observer is measured. Information about detection probability comes from an assumed model for the relationship between detection probability and distance to observer.
 
 \section*{Literature Cited}
 \newcommand{\rf}{\vskip .1in\par\sloppy\hangindent=1pc\hangafter=1
