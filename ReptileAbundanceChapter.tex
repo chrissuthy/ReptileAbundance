@@ -596,7 +596,7 @@ For the analysis of the SCR model we defined
 and then buffering that by 40 meters, creating a state-space having an
 area of 10.64 ha (Figure 1).
 The summary results from fitting these 3 models to the slow worm data
-are given in Table XXXX. We note that
+are given in Table \ref{tab.results}. We note that
 AIC not comparable between SCR and ordinary closed models because the
 models are fitted to different data sets:
 SCR models use the individual, trap and occasion-specific
@@ -609,11 +609,12 @@ occasion-specific encounter history
 \caption{The results of fitting models M0 and Mh and an ordinary SCR
   model to the slow worm data. }
 \begin{tabular}{ccccccc}
-Model & $logit(p_0)$ & log(n0)   & extra param & N      & D(/ha)  & AIC     \\ \hline
-M0    & -3.189       & 3.965     &             & 47.965 &         & -73.42  \\
-Mh    & -4.193       & 3.4291899 & 0.108       & 74.852 &         & -89.21  \\
-SCR   &  0.050       &           & 21.02       & 154.87 & 14.56   & 320.27  \\
+Model & $p_0$ &  $n_0$   & extra parameter & N      & D(/ha)  & AIC     \\ \hline
+M0    &  0.0396  & 3.97  &                & 47.97 &         & -73.42  \\
+Mh    &  0.0149  & 30.88 & 0.108          & 74.88 &         & -89.21  \\
+SCR   &  0.050   &           & 21.02       & 154.87 & 14.56   & 320.27  \\
 \end{tabular}
+\label{tab.results}
 \end{table}
 
 \section*{6. Summary}
