@@ -50,7 +50,7 @@ individuals while accounting for imperfect detection. We first describe
 some classic closed population models for estimating abundance (Otis
 et al., 1978), then consider some recent extensions that provide a
 spatial context for the estimation of abundance, and therefore
-density, $D$ (Spatial or spatially-explicit Capture-Recapture: Efford
+density, $D$ (spatial or spatially-explicit capture-recapture: Efford
 2004, Royle et al. 2014), and finally provide an example of estimating
 abundance and density of reptiles using an artificial cover object
 survey of slow worms, \textit{Anguis fragilis}.
@@ -309,7 +309,7 @@ almost always the case that multiple populations of individuals are
 sampled. For example, small mammal trapping studies might involve a
 number of live trapping grids, or reptile and amphibian studies might
 involve a number of distinct cover board arrays.  In such cases we can
-think of the distinct populations being sampled as spatial strata,
+think of the distinct populations being sampled by each array as spatial strata,
 with potentially stratum specific parameters such as $p_{g}$, $N_{g}$
 ($g$ for 'grid') which could be estimated by applying closed
 population models to data collected from each stratum.  However,
@@ -338,7 +338,7 @@ exists. However an important related class of models are models in
 which individual heterogeneity can be explained by explicit individual
 covariates. These are often called ``individual covariate models''
 but, in keeping with the classical nomenclature on closed population
-models, Kery and Schaub (2012) referred to these models as ``model
+models, K\'{e}ry and Schaub (2012) referred to these models as ``model
 $M_{x}$'', the $x$ representing some explicit covariate (of course
 multiple covariates are allowed).  Classical examples of covariates
 influencing detection probability are type of animal (juvenile/adult
@@ -366,7 +366,7 @@ estimated.
 Traditionally, estimation of $N$ in model $M_{x}$ is achieved using
 methods based on ideas of unequal probability sampling (i.e.,
 Horvitz-Thompson estimation). This idea was developed independently by
-Huggins (1989) and Alho (1990). The estimator of N is given as a
+Huggins (1989) and Alho (1990). The estimator of $N$ is given as a
 derived parameter:
 \[
 \hat{N} = \sum_{i=1}^{n} \frac{1}{\tilde{p}_{i}}
@@ -532,7 +532,7 @@ statistics but, in the context of capture-recapture models, where $N$
 is unknown, it has a consistent implementation across classes of
 capture-recapture models and one that is really convenient from the
 standpoint of doing MCMC (Royle et al. 2007; Royle \& Dorazio
-2012). Chapter 6 of Kery \& Schaub (2011) provide an accessible and
+2012). Chapter 6 of K\'{e}ry \& Schaub (2011) provide an accessible and
 complementary development of Bayesian analysis of non-spatial closed
 population models. The tremendous benefit of formulating SCR models in
 the {\tt BUGS} language is that it is relatively trivial to extend
@@ -698,17 +698,17 @@ Sciences, Wädenswil. 74 pp.
 
 \rf Pledger, S. (2000). Unified maximum likelihood estimates for closed capture-recapture models using mixtures. Biometrics, 56(2), 434-442.
 
-\rf R Development Core Team. 2004. R: A language and environment for statistical computing. R Foundation for Statistical Computing Vienna, Austria.
+\rf R Development Core Team. (2004). R: A language and environment for statistical computing. R Foundation for Statistical Computing Vienna, Austria.
 
 \rf Reading, C. J., L. M. Luiselli, G. C. Akani, Xavier Bonnet, G. Amori, Jean-Marie Ballouard, E. Filippi, Guy Naulleau, D. Pearson, \& L. Rugiero. (2010). Are snake populations in widespread decline?. \textit{Biology Letters}, 6, 777-780.
 
 \rf Royle, J. A. (2004). Generalized estimators of avian abundance from count survey data. \textit{Animal Biodiversity and Conservation}, 27(1), 375-386.
 
-\rf Royle, J.A., R.M. Dorazio and W.A. Link. 2007. Analysis of multinomial models with unknown index using data augmentation. {\it Journal of Computational and Graphical Statistics}  16, 67-85.
+\rf Royle, J.A., R.M. Dorazio and W.A. Link. (2007). Analysis of multinomial models with unknown index using data augmentation. {\it Journal of Computational and Graphical Statistics}  16, 67-85.
 
-\rf  Royle, J.A. and K.V. Young. 2008. A hierarchical model for spatial capture-recapture data. {\it Ecology}  89, 2281-2289.
+\rf  Royle, J.A. and K.V. Young. (2008). A hierarchical model for spatial capture-recapture data. {\it Ecology}  89, 2281-2289.
 
-\rf Royle, J. A. 2009. Analysis of capture-recapture models with individual covariates using data augmentation. {\it Biometrics}, 65(1), 267-274.
+\rf Royle, J. A. (2009). Analysis of capture-recapture models with individual covariates using data augmentation. {\it Biometrics}, 65(1), 267-274.
 
 \rf Royle, J. A., Converse, S. J., \& Link, W. A. (2012). Data Augmentation for Hierarchical Capture-recapture Models. arXiv preprint arXiv:1211.5706.
 
@@ -716,11 +716,13 @@ Sciences, Wädenswil. 74 pp.
 
 \rf Royle, J. A., Chandler, R. B., Gazenski, K. D., \& Graves, T. A. (2013). Spatial capture-recapture models for jointly estimating population density and landscape connectivity. \textit{Ecology}, 94(2), 287-294.
 
-\rf Royle, J. A., R. B. Chandler, C. C. Sun, and A. K. Fuller. 2013. Integrating resource selection information with spatial capture-recapture. {\it Methods in Ecology and Evolution} 4(6), 520-530.
+\rf Royle, J. A., R. B. Chandler, C. C. Sun, and A. K. Fuller. (2013). Integrating resource selection information with spatial capture-recapture. {\it Methods in Ecology and Evolution} 4(6), 520-530.
 
-\rf Royle, J. A., R. B. Chandler, R. Sollmann and B. Gardner. 2014. Spatial Capture-Recapture. Academic Press.
+\rf Royle, J. A., R. B. Chandler, R. Sollmann and B. Gardner. (2014). Spatial Capture-Recapture. Academic Press.
 
-\rf Royle et al. {\it in review}).  movement paper
+\rf Royle, J. A., Fuller, A. K., and Sutherland, C. (in
+review). Spatial capture-recapture models allowing for Markovian
+transience or dispersal. {\it Population Ecology}.
 
 \rf Sacchi, R., Scali, S., Pellitteri-Rosa, D., Pupin, F., Gentilli, A., Tettamanti, S. \& Fasola, M. (2010). Photographic identification in reptiles: a matter of scales. \textit{Amphibia-Reptilia}, 31(4), 489-502.
 
@@ -730,7 +732,7 @@ Sciences, Wädenswil. 74 pp.
 
 \rf Sutherland, C. S., Elston, D. A., \& Lambin, X. (2014). A demographic, spatially explicit patch occupancy model of metapopulation dynamics and persistence. Ecology, 95(11), 3149-3160.
 
-\rf Sutherland, C., A. K. Fuller and J. A. Royle. 2015. Modelling non-Euclidean movement and landscape connectivity in highly structured ecological networks. {\it Methods in Ecology and Evolution}  6, 169-177.
+\rf Sutherland, C., A. K. Fuller and J. A. Royle. (2015). Modelling non-Euclidean movement and landscape connectivity in highly structured ecological networks. {\it Methods in Ecology and Evolution}  6, 169-177.
 
 \rf Tanner, M. A., \& Wong, W. H. (1987). The calculation of posterior distributions by data augmentation. \textit{Journal of the American statistical Association}, 82(398), 528-540.
 
