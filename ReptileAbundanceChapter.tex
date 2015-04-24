@@ -72,9 +72,12 @@ available resources. For reptiles, survey methods that allow
 individuals to be captured and marked include, for example, visual
 searches within a defined area (Zylstra et al. 2010), cage traps
 (Tyrrell et al. 2009, Christy et al. 2010) or pitfall traps, and the
-use of artificial cover objects (ACO, Grant et al. 1992) (see also Chapter X).
-Once captured, individuals can be uniquely identified using either natural
-markings that can be used to determine individual identity (Sacchi et al. 2010), using tags or markings (Grant \& Doherty 2007) or physical marking such as toe clipping (Paulissen \& Meyer 2000) (see also Chapter X).
+use of artificial cover objects (ACO, Grant et al. 1992) (see also
+Chapter X).  Once captured, individuals can be uniquely identified
+using either natural markings that can be used to determine individual
+identity (Sacchi et al. 2010), using tags or markings (Grant \&
+Doherty 2007) or physical marking such as toe clipping (Paulissen \&
+Meyer 2000) (see also Chapter X).
 
 Such repeated sampling results in individual encounter histories that,
 for each of the $i=1,\ldots,n$ individuals encountered, describes
@@ -140,9 +143,9 @@ the simplest formulation of a capture-recapture model, model $M_0$.
 Under model $M_0$, the encounter probability for each individual,
 $p_i$, is assumed to be the same for all individuals in the
 population, i.e., $p_i = p$. Then, whether or not we encounter an
-individual $i=1,2,\ldots,N$ during sampling occasion $k$, $y_{ik}$, is a Bernoulli
-trial (a ``coin flip'')
-with constant probability $p$, which we can write formally as:
+individual $i=1,2,\ldots,N$ during sampling occasion $k$, $y_{ik}$, is
+a Bernoulli trial (a ``coin flip'') with constant probability $p$,
+which we can write formally as:
 \[
 y_{ik} \sim \hbox{Bernoulli}(p).
 \]
@@ -252,13 +255,15 @@ in Julian day, $J_{k}$, such as:
 and estimate the parameters $\alpha_0$, $\alpha_1$ and $\alpha_2$
 instead of fully occasion specific parameters $p_k$.  The behavioral
 response model is usually parameterized as a permanent change in $p$
-for individuals subsequent to their initial capture (i.e. $p_{pre}$ and $p_{post}$, for capture probability {\it prior to} and {\it after} first capture respectively). This could be the
-result of `trap happiness' due to having baited traps (uncommon in
-reptile studies) or it could be the result of `trap shyness' due to
-aversion to handling. Sometimes a transient or ephemeral behavioral
-response may be sensible (Yang and Chao 2005). Under this type of
-model the response to initial capture only lasts for a brief period
-after initial capture.
+for individuals subsequent to their initial capture (i.e. $p_{pre}$
+and $p_{post}$, for capture probability {\it prior to} and {\it after}
+first capture respectively). This could be the result of `trap
+happiness' due to having baited traps (uncommon in reptile studies) or
+it could be the result of `trap shyness' due to aversion to
+handling. Sometimes a transient or ephemeral behavioral response may
+be sensible (Yang and Chao 2005). Under this type of model the
+response to initial capture only lasts for a brief period after
+initial capture.
 
 Model $M_h$ has been an important model in capture-recapture because
 it has long been recognized that the existance of individual
@@ -292,11 +297,11 @@ estimated by a suitable algebraic function of the counts.
 
 In practice, removal sampling is done using `temporary' removals in
 which an area is searched and individuals are temporarily housed in a
-bucket or cage during successive passes (Garden et al. 2007). At the end of the study they
-would normally be released to where they were initially captured. Of
-course earlier applications of removal sampling to fisheries involved
-permanent removal, typically harvest, but that is not practical in
-most studies of reptiles.
+bucket or cage during successive passes (Garden et al. 2007). At the
+end of the study they would normally be released to where they were
+initially captured. Of course earlier applications of removal sampling
+to fisheries involved permanent removal, typically harvest, but that
+is not practical in most studies of reptiles.
 
 \subsubsection*{2.5. Hierarchical capture-recapture models}
 
@@ -437,10 +442,11 @@ activity centers are distributed uniformly throughout across space:
 As before, the population is subjected to sampling using some trapping
 devices (for convenience, we will refer to these as `traps'). However,
 we explicitly acknowledge both how many traps there are: $j=1,...,J$
-traps, and the locations of each of the traps, which we denote as $x_j$.
-The acknowledgement of the spatial structure of the traps means observations can be spatially indexed so encounter
-histories describe $who$ ($i$), $when$ ($k$), and importantly, $where$
-($j$) individuals were located, i.e., $y_{i,j,k}$. Typically, these
+traps, and the locations of each of the traps, which we denote as
+$x_j$.  The acknowledgement of the spatial structure of the traps
+means observations can be spatially indexed so encounter histories
+describe $who$ ($i$), $when$ ($k$), and importantly, $where$ ($j$)
+individuals were located, i.e., $y_{i,j,k}$. Typically, these
 observations are assumed to be binomially distributed with sample size
 $K$ (the number of sampling occasions):
 \[
@@ -466,45 +472,89 @@ unlike model $M_h$, the parameter represents an explicit source of
 heterogeneity, that due to distance between individual activity or
 home range centers and trap locations.
 
-SCR models address the density estimation problem directly by parameterizing
-the model directly in terms of individual activity centers $s_i$ and
-prescribing the state-space ${\cal S}$. The inference problem then
-reduces to estimating the number of such activity centers in the
-well-defined area ${\cal S}$, i.e., density.  Density, $D$, is simply a
-transformation of $N$:  $D =  N/\mbox{Area}({\cal S})$.
-While SCR models resolve
-this problem, they also enable researchers to study many aspects of
-spatial ecology from individual encounter history data, including
-resource selection or space usage (Royle et al. 2013), landscape
-connectivity (Royle et al. 2013b; Sutherland et al. 2014), spatial
-variation in density (Borchers and Efford 2008, Royle et al. 2013),
-and movement or dispersal (Schaub and Royle 2014, Ergon and Gardner
-2014, Royle et al. {\it in review}).
+SCR models address the density estimation problem directly by
+parameterizing the model directly in terms of individual activity
+centers $s_i$ and prescribing the state-space ${\cal S}$. The
+inference problem then reduces to estimating the number of such
+activity centers in the well-defined area ${\cal S}$, i.e., density.
+Density, $D$, is simply a transformation of $N$: $D =
+N/\mbox{Area}({\cal S})$.  While SCR models resolve this problem, they
+also enable researchers to study many aspects of spatial ecology from
+individual encounter history data, including resource selection or
+space usage (Royle et al. 2013), landscape connectivity (Royle et
+al. 2013b; Sutherland et al. 2014), spatial variation in density
+(Borchers and Efford 2008, Royle et al. 2013), and movement or
+dispersal (Schaub and Royle 2014, Ergon and Gardner 2014, Royle et
+al. {\it in review}).
 
 \subsection*{4. Software}
 
-Non-spatial closed population capture-recapture models can be fit using both classical (frequentist) and Bayesian methods, and here we outline some of the common software
-options and material sources for doing so.
+Non-spatial closed population capture-recapture models can be fit
+using both classical (frequentist) and Bayesian methods, and here we
+outline some of the common software options and material sources for
+doing so.
 
-By far the most widely used software for fitting such models is the Windows-based program {\bf MARK} (White \& Burnham 1999), a free, user friendly and extremely well-documented application for fitting most of the standard closed population models using maximum likelihood (www.phidot.org/software/mark). In an effort to facilitate easier model development, increased reproducibility and to allow for a more organized and automated work flow, Laake \& Rexstad (2008) developed the {\bf R} package {RMark}, an interface between {\bf R} and {\bf MARK} that can be used to construct input files and extract output that can manipulated in the {\tt R} environment (www.phidot.org/software/mark/rmark/). The {\bf R} package {\tt unmarked} can also be used to fit some standard closed population capture-recapture models using maximum likelihood (Fiske \& Chandler 2011). In addition to detailed documentation, both {\bf MARK} (www.phidot.org/forum/index.php) and {\tt unmarked} (\verb|https://groups.google.com/forum/#!forum/unmarked|) have supporting web based forums.
+By far the most widely used software for fitting such models is the
+Windows-based program {\bf MARK} (White \& Burnham 1999), a free, user
+friendly and extremely well-documented application for fitting most of
+the standard closed population models using maximum likelihood
+(www.phidot.org/software/mark). In an effort to facilitate easier
+model development, increased reproducibility and to allow for a more
+organized and automated work flow, Laake \& Rexstad (2008) developed
+the {\bf R} package {RMark}, an interface between {\bf R} and {\bf
+  MARK} that can be used to construct input files and extract output
+that can manipulated in the {\tt R} environment
+(www.phidot.org/software/mark/rmark/). The {\bf R} package {\tt
+  unmarked} (Fiske \& Chandler 2011)
+can also be used to fit hierarchical versions of some
+standard closed population capture-recapture models using maximum
+likelihood (see K\'{e}ry and Royle 2015, ch. 7). 
+In addition to detailed
+documentation, both {\bf MARK} (www.phidot.org/forum/index.php) and
+{\tt unmarked}
+(\verb|https://groups.google.com/forum/#!forum/unmarked|) have
+supporting web based forums.
 
-Spatial capture-recapture models cannot (yet) be implemented in {\bf MARK}, and, although a windows-based spatial equivalent exists ({\bf DENSITY}: Efford, et al. 2004), it is no longer in development and likelihood analysis of SCR models is typically conducted using the {\bf R} package {\tt secr} (Efford 2011). {\tt secr} implements a wide variety of spatial capture-recapture methods, including spatial version of the models described above and in Otis et al. (1978), all within the {\bf R} environment ({\tt secr} forum can be found here: \verb|https://groups.google.com/forum/#!forum/secrgroup|)
+Spatial capture-recapture models cannot (yet) be implemented in {\bf
+  MARK}, and, although a windows-based spatial equivalent exists ({\bf
+  DENSITY}: Efford, et al. 2004), it is no longer in development and
+likelihood analysis of SCR models is typically conducted using the
+{\bf R} package {\tt secr} (Efford 2011). {\tt secr} implements a wide
+variety of spatial capture-recapture methods, including spatial
+version of the models described above and in Otis et al. (1978), all
+within the {\bf R} environment ({\tt secr} forum can be found here:
+\verb|https://groups.google.com/forum/#!forum/secrgroup|)
 
-Often situations arise when an analysis requires a `non-standard' approach (e.g. an integrated population model: Shaub \& Abadi 2011, demographic metapopulation models: Sutherland et al. 2014, models for transience and dispersal: Royle et al. {\it In review}). In these cases, available likelihood-based methods cannot be used and instead a Bayesian analysis is preferred. Bayesian methods, specifically the use of Markov Chain Monte Carlo (MCMC) using the {\tt BUGS} language, offer a great deal of flexibility and modeling freedom (Kery and Shaub 2013).
+Often situations arise when an analysis requires a `non-standard' approach (e.g. an integrated population model: Shaub \& Abadi 2011, demographic metapopulation models: Sutherland et al. 2014, models for transience and dispersal: Royle et al. {\it In review}). In these cases, available likelihood-based methods cannot be used and instead a Bayesian analysis is preferred. Bayesian methods, specifically the use of Markov Chain Monte Carlo (MCMC) using the {\tt BUGS} language, offer a great deal of flexibility and modeling freedom (K\'{e}ry and Schaub 2013).
 
-Bayesian analysis of capture-recapture models is done using a method related to classical ``data augmentation'' from the statistics literature (e.g., Tanner \& Wong, 1987).  This is a general concept in statistics but, in the context of capture-recapture models, where $N$ is unknown, it has a consistent implementation across classes of capture-recapture models and one that is really convenient from the standpoint of doing MCMC (Royle et al. 2007; Royle \& Dorazio 2012). Chapter 6 of Kery \& Schaub (2011) provide an accessible and complementary development of Bayesian analysis of non-spatial closed population models. The tremendous benefit of formulating SCR models in the {\tt BUGS} language is that it is relatively trivial to extend form the the non-spatial model to the formulation on the closed population model. In their book, Royle et al. (2014) provide a thorough and accessible treatment of SCR and Bayesian methods for analyzing a SCR models which has an associated forum (\verb|https://groups.google.com/forum/#!forum/spatialcapturerecapture|).
+Bayesian analysis of capture-recapture models is done using a method
+related to classical ``data augmentation'' from the statistics
+literature (e.g., Tanner \& Wong, 1987).  This is a general concept in
+statistics but, in the context of capture-recapture models, where $N$
+is unknown, it has a consistent implementation across classes of
+capture-recapture models and one that is really convenient from the
+standpoint of doing MCMC (Royle et al. 2007; Royle \& Dorazio
+2012). Chapter 6 of Kery \& Schaub (2011) provide an accessible and
+complementary development of Bayesian analysis of non-spatial closed
+population models. The tremendous benefit of formulating SCR models in
+the {\tt BUGS} language is that it is relatively trivial to extend
+form the the non-spatial model to the formulation on the closed
+population model. In their book, Royle et al. (2014) provide a
+thorough treatment of SCR and Bayesian methods for
+analyzing a SCR models which has an associated forum
+(\verb|https://groups.google.com/forum/#!forum/spatialcapturerecapture|).
 
 \subsection*{5. Slow worm example}
 
 We provide an example here using a study of the slow worm (Anguis
-fragilis) conducted in Mueterschwanderberg, canton Nidwalden, Switzerland (Meier
-2012, thesis). A more detailed SCR analysis of the data from that
-study is given by Meier et al. (in prep). Here we analyze a portion of
-the data from one of the artificial cover object arrays which used 23
-cover objects (Fig. \ref{fig.fig1}). This ACO array was operated over 59 days and it
-produced encounter histories on 44 unique individuals, 23 captured
-once, 4 capture twice, 4 thrice, 5 four times, 3 five times, 1 six
-times and 4 seven times.
+fragilis) conducted in Mueterschwanderberg, canton Nidwalden,
+Switzerland (Meier 2012, thesis). A more detailed SCR analysis of the
+data from that study is given by Meier et al. (in prep). Here we
+analyze a portion of the data from one of the artificial cover object
+arrays which used 23 cover objects (Fig. \ref{fig.fig1}). This ACO
+array was operated over 59 days and it produced encounter histories on
+44 unique individuals, 23 captured once, 4 capture twice, 4 thrice, 5
+four times, 3 five times, 1 six times and 4 seven times.
 
 \begin{figure}[h]
 \centering
@@ -600,10 +650,9 @@ Cagle, F. R. (1939). A system of marking turtles for future identification. \tex
 
 \rf Coull, B. A., \& Agresti, A. (1999). The Use of Mixed Logit Models to Reflect Heterogeneity in Capture-Recapture Studies. Biometrics, 55(1), 294-301.
 
-CHECK THIS ONE:
 \rf Converse, S. J., \& Royle, J. A. (2012). Dealing with incomplete and variable detectability in multi-year, multi-site monitoring of ecological populations. Design and Analysis of Long-term Ecological Monitoring Studies. Cambridge University Press, Cambridge, UK, 426-442.
 
-\rf Dorazio, R. M., \& Andrew Royle, J. (2003). Mixture models for estimating the size of a closed population when capture rates vary among individuals. Biometrics, 59(2), 351-364.
+\rf Dorazio, R. M., \& Royle, J. A. (2003). Mixture models for estimating the size of a closed population when capture rates vary among individuals. Biometrics, 59(2), 351-364.
 
 \rf Dorazio, R. M., Jelks, H. L., \& Jordan, F. (2005). Improving Removal-Based Estimates of Abundance by Sampling a Population of Spatially Distinct Subpopulations. Biometrics, 61(4), 1093-1101.
 
@@ -614,7 +663,7 @@ CHECK THIS ONE:
 
 \rf Efford, M. G. (2011). secr: Spatially explicit capture-recapture models. R package version, 2(0).
 
-\rf Fiske, I., \& Chandler, R. (2011). unmarked: An R package for fitting hierarchical models of wildlife occurrence and abundance. Journal of Statistical Software, 43(10), 1-23.
+\rf Fiske, I., \& Chandler, R. B. (2011). unmarked: An R package for fitting hierarchical models of wildlife occurrence and abundance. Journal of Statistical Software, 43(10), 1-23.
 
 \rf Garden, J.G., McAlpine, C.A., Possingham, H.P., and Jones, D.N. (2007) Using multiple survey methods to detect terrestrial reptiles and mammals: what are the most successful and cost-efficient combinations?. Wildlife Research 34, 218â€“227.
 
