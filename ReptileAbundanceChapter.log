@@ -1,21 +1,23 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.5.28)  24 APR 2015 12:24
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.11.3)  24 APR 2015 14:14
 entering extended mode
-**C:/Users/cs922/Dropbox/ReptileAbundance/ReptileAbundanceChapter.tex
-(C:/Users/cs922/Dropbox/ReptileAbundance/ReptileAbundanceChapter.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+**ReptileAbundanceChapter.tex
+
+(c:\Users\aroyle\Desktop\Book-Chapter-reptiles\ReptileAbundance\ReptileAbundanc
+eChapter.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk10.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk10.clo"
 File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -31,39 +33,32 @@ File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/01/28 v0.05d Graphics/color for pdfTeX
 \Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+(C:\Users\aroyle\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip43
@@ -75,10 +70,10 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen108
 \titlewidthfirst=\dimen109
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -92,19 +87,20 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+(C:\Users\aroyle\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count89
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen110
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\ttlkeys.def"
+(C:\Users\aroyle\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\ttlkeys.def
 File: ttlkeys.def 2011/12/15
 \c@ttlp@side=\count90
 \ttlp@side=\count91
 )
-(C:\Users\cs922\Dropbox\ReptileAbundance\ReptileAbundanceChapter.aux)
+(c:\Users\aroyle\Desktop\Book-Chapter-reptiles\ReptileAbundance\ReptileAbundanc
+eChapter.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
@@ -117,8 +113,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count92
 \scratchdimen=\dimen111
@@ -139,19 +134,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+{C:/Users/aroyle/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2] [3] [4]
 Underfull \vbox (badness 3590) has occurred while \output is active []
 
  [5]
-[6] [7]
-Overfull \hbox (77.19228pt too wide) in paragraph at lines 509--518
+[6] [7] [8]
+Overfull \hbox (77.19228pt too wide) in paragraph at lines 490--499
 \OT1/cmr/m/n/10 ment (\OT1/cmtt/m/n/10 secr \OT1/cmr/m/n/10 fo-rum can be found
  here: []\OT1/cmtt/m/n/10 https://groups.google.com/forum/#!forum/secrgroup\OT1
 /cmr/m/n/10 ) 
  []
 
-[8]
-Overfull \hbox (100.38623pt too wide) in paragraph at lines 521--537
+
+Overfull \hbox (100.38623pt too wide) in paragraph at lines 502--518
 \OT1/cmr/m/n/10 has an as-so-ci-ated fo-rum ([]\OT1/cmtt/m/n/10 https://groups.
 google.com/forum/#!forum/spatialcapturerecapture\OT1/cmr/m/n/10 ). 
  []
@@ -159,13 +155,11 @@ google.com/forum/#!forum/spatialcapturerecapture\OT1/cmr/m/n/10 ).
 <traps.png, id=41, 401.5pt x 401.5pt>
 File: traps.png Graphic file (type png)
  <use traps.png>
-Package pdftex.def Info: traps.png used on input line 552.
-(pdftex.def)             Requested size: 289.09814pt x 289.09814pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] [10 <C:/Users/cs922/Dropbox/ReptileAbundance/traps.png>] [11]
+[9] [10 <c:/Users/aroyle/Desktop/Book-Chapter-reptiles/ReptileAbundance/traps.p
+ng (PNG copy)>] [11]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 Missing character: There is no â in font cmr10!
@@ -174,43 +168,40 @@ Missing character: There is no ¬ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no „ in font cmr10!
 Missing character: There is no ¢ in font cmr10!
- [12]
+ [12] [13]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ƒ in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no © in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ƒ in font cmr10!
- [13]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
-
-[14] [15] [16]
-(C:\Users\cs922\Dropbox\ReptileAbundance\ReptileAbundanceChapter.aux) ) 
+ [14] [15] [16]
+(c:\Users\aroyle\Desktop\Book-Chapter-reptiles\ReptileAbundance\ReptileAbundanc
+eChapter.aux) ) 
 Here is how much of TeX's memory you used:
- 2117 strings out of 493921
- 27173 string characters out of 3144876
- 187400 words of memory out of 3000000
- 5433 multiletter control sequences out of 15000+200000
+ 1959 strings out of 494053
+ 24757 string characters out of 3148600
+ 185414 words of memory out of 3000000
+ 5277 multiletter control sequences out of 15000+200000
  6928 words of font info for 25 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 27i,9n,35p,1066b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ReptileAbundanceChapter.pdf (16 pages, 232172 bytes).
+ 715 hyphenation exceptions out of 8191
+ 25i,9n,35p,1026b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ReptileAbundanceChapter.pdf (16 pages, 233171 bytes).
 PDF statistics:
  112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
