@@ -514,15 +514,15 @@ ordinary, i.e., nonspatial closed population models.
 
 \subsection*{5. Slow worm example}
 
-We provide an example here using a study of the slow worm from (Anguis
-fragilis) at Mueterschwanderberg, canton Nidwalden, Switzerland (Meier
-2012, thesis). A more detailed SCR analysis of the data from that
-study is given by Meier et al. (in prep). Here we analyze a portion of
-the data from one of the artificial cover object arrays which used 23
-cover objects (Fig. \ref{fig.fig1}). This ACO array was operated over 59 days and it
-produced encounter histories on 44 unique individuals, 23 captured
-once, 4 capture twice, 4 thrice, 5 four times, 3 five times, 1 six
-times and 4 seven times.
+We provide an example here using a study of the slow worm (Anguis
+fragilis) conducted at Mueterschwanderberg, canton Nidwalden,
+Switzerland (Meier 2012, thesis). A more detailed SCR analysis of the
+data from that study is given by Meier et al. (in prep). Here we
+analyze a portion of the data from one of the artificial cover object
+arrays which used 23 cover objects (Fig. \ref{fig.fig1}). This ACO
+array was operated over 59 days and it produced encounter histories on
+44 unique individuals, 23 captured once, 4 capture twice, 4 thrice, 5
+four times, 3 five times, 1 six times and 4 seven times.
 \begin{figure}[h]
 \centering
 \includegraphics[height=4in,width=4in]{traps.png}
@@ -573,12 +573,17 @@ over all traps to produce a simpler reduced-information individual by
 occasion-specific encounter history
 
 
-Model   logit(p_0)  log(n0)  sigma                N     D     AIC
- M0    -3.189134   3.965148                  47.965148      -73.42
- Mh    -4.1931693  3.4291899 0.1083141       74.8516406     -89.21
-
-SCR    0.05010899                      21.02  154.87  14.56  320.27
-
+\begin{table}[ht]
+\centering
+\caption{The results of fitting models M0 and Mh and an ordinary SCR
+  model to the slow worm data. }
+\begin{tabular}{ccccccc}
+Model &  $logit(p_0)$ &  log(n0) & extra param &   N    &  D(/ha)  &    AIC \\ \hline
+ M0   & -3.189       & 3.965     &           & 47.965 &       & -73.42 \\
+ Mh   & -4.193       & 3.4291899 &0.108     & 74.852 &       & -89.21 \\
+SCR   &  0.050        &          & 21.02     & 154.87 & 14.56 &  320.27 \\
+\end{tabular}
+\end{table}
 
 
 
